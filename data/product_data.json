@@ -1,0 +1,140 @@
+{
+  "Retaining Walls": {
+    "EcoRing": {
+      "ID": "2298",
+      "Name": "EcoRing",
+      "Short description": "The EcoRing system combines an intelligent circular shape with sustainable production and integrates with the environment by offering natural soil aeration.",
+      "Web Page": "https://example-company.com/prodotto/ecoring",
+      "Description": "Available colors: Yellow, Gray. Placement at maximum spacing. Features: Manual installation, Machine installation.",
+      "Colors": ["Yellow", "Gray"],
+      "Features": ["Manual installation", "Machine installation"],
+      "Categories": "Retaining Walls > EcoRing",
+      "Image": [
+        "https://picsum.photos/400/300?random=1",
+        "https://picsum.photos/400/300?random=2"
+      ],
+      "Modular dimensions (cm):": "46x55x12 - 20",
+      "Block weight (kg):": "58",
+      "Pcs/sqm laid at max spacing (32cm):": "8.2",
+      "Pcs/sqm laid in adherence:": "14",
+      "Pcs/pallet:": "20",
+      "Meta: technical_sheet": "https://docs.example-company.com/dummy.pdf"
+    },
+    "MiniEcoRing": {
+      "ID": "2334",
+      "Name": "MiniEcoRing",
+      "Short description": "MiniEcoRing is the compact version suitable for light slopes, offering versatility and easy installation while maintaining the advantages of the main system.",
+      "Web Page": "https://example-company.com/prodotto/miniecoring",
+      "Description": "Available colors: Yellow, Gray. Standard installation pattern. Features: Manual installation, Machine installation.",
+      "Colors": ["Yellow", "Gray"],
+      "Features": ["Manual installation", "Machine installation"],
+      "Categories": "Retaining Walls > MiniEcoRing",
+      "Image": [
+        "https://picsum.photos/400/300?random=9",
+        "https://picsum.photos/400/300?random=10"
+      ],
+      "Modular dimensions (cm):": "35 x 30 x 15-16.5",
+      "Block weight (kg):": "21",
+      "Pcs/sqm laid at max spacing (25 cm):": "11.5",
+      "Pcs/sqm laid at 16 cm spacing:": "13",
+      "Pcs/sqm laid in adherence (0 cm):": "19",
+      "Pcs/pallet:": "60",
+      "Meta: technical_sheet": "https://docs.example-company.com/dummy.pdf"
+    }
+  },
+  "Curbing, Copings & Drain Channels": {
+    "SideLine": {
+      "ID": "2618",
+      "Name": "SideLine",
+      "Short description": "Product available in various thicknesses; SP8 model also offered in Sandstone and Hazelnut colors.",
+      "Web Page": "https://example-company.com/prodotto/sideline",
+      "Description": "Available colors: Sandstone, Hazelnut.",
+      "Colors": ["Sandstone", "Hazelnut"],
+      "Categories": "Curbing, Copings & Drain Channels",
+      "Image": [
+        "https://picsum.photos/400/300?random=17"
+      ],
+      "CURB SP8:": "Modular dimensions (cm): 100 x 8 x 25; Weight per piece (Kg): 39; Pieces per pack (Pcs/pack): 36",
+      "CURB SP10:": "Modular dimensions (cm): 100 x 10 x 25; Weight per piece (Kg): 50; Pieces per pack (Pcs/pack): 27",
+      "CURB SP12:": "Modular dimensions (cm): 100 x 12 x 25; Weight per piece (Kg): 60; Pieces per pack (Pcs/pack): 24",
+      "CURB SP15:": "Modular dimensions (cm): 100 x 15 x 25; Weight per piece (Kg): 76; Pieces per pack (Pcs/pack): 18",
+      "Meta: technical_sheet": "https://docs.example-company.com/dummy.pdf"
+    },
+    "GrecCurb100": {
+      "ID": "2626",
+      "Name": "GrecCurb100",
+      "Short description": "",
+      "Web Page": "https://example-company.com/prodotto/greccurb100",
+      "Description": "",
+      "Colors": [],
+      "Categories": "Curbing, Copings & Drain Channels",
+      "Image": [
+        "https://picsum.photos/400/300?random=18"
+      ],
+      "Modular dimensions (cm):": "100 x 25 x 6 x 13",
+      "Weight (Kg):": "69",
+      "Pieces per linear meter (Pcs/ml)": "1",
+      "Pieces per pallet:": "24",
+      "Meta: technical_sheet": "https://docs.example-company.com/dummy.pdf"
+    },
+    "DrainConcaveDual": {
+      "ID": "2633",
+      "Name": "DrainConcaveDual",
+      "Short description": "",
+      "Web Page": "https://example-company.com/prodotto/drainconcavedual",
+      "Description": "",
+      "Colors": [],
+      "Categories": "Curbing, Copings & Drain Channels",
+      "Image": [
+        "https://picsum.photos/400/300?random=19"
+      ],
+      "Modular dimensions (cm):": "40 x 50 x H10 - x H8",
+      "Weight (kg):": "40",
+      "Pieces per linear meter (Pcs/ml):": "2",
+      "Meta: technical_sheet": "https://docs.example-company.com/dummy.pdf"
+    }
+  },
+  "Outdoor Paving": {
+    "WavePave": {
+      "ID": "1074",
+      "Name": "WavePave",
+      "Short description": "WavePave is an outdoor paving system designed for durability and aesthetics, suitable for open environments.",
+      "Web Page": "https://example-company.com/prodotto/wavepave",
+      "Description": "",
+      "Colors": [],
+      "Categories": "Outdoor Paving > WavePave",
+      "Image": [
+        "https://picsum.photos/400/300?random=20",
+        "https://picsum.photos/400/300?random=21"
+      ],
+      "Thickness (mm)": "80",
+      "Meta: technical_sheet": "https://docs.example-company.com/dummy.pdf"
+    },
+    "Rustika": {
+      "ID": "2091",
+      "Name": "Rustika",
+      "Short description": "Rustika is a traditional aged-style paving, ideal for outdoor areas with a natural look.",
+      "Web Page": "https://example-company.com/prodotto/rustika",
+      "Description": "",
+      "Colors": [],
+      "Categories": "Outdoor Paving > Traditional Style",
+      "Image": [
+        "https://picsum.photos/400/300?random=22"
+      ],
+      "Meta: technical_sheet": "https://docs.example-company.com/dummy.pdf"
+    },
+    "SculptStone": {
+      "ID": "2179",
+      "Name": "SculptStone",
+      "Short description": "SculptStone combines a carved effect with strength, designed for elegant and durable outdoor environments.",
+      "Web Page": "https://example-company.com/prodotto/sculptstone",
+      "Description": "",
+      "Colors": [],
+      "Categories": "Outdoor Paving > Traditional Style",
+      "Image": [
+        "https://picsum.photos/400/300?random=23"
+      ],
+      "Meta: technical_sheet": "https://docs.example-company.com/dummy.pdf"
+    }
+  }
+}

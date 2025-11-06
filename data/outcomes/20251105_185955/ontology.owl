@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns="http://example.com/warehouse-product-ontology#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SideLineSP8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>SideLineSP8</rdfs:label>
+    <rdfs:comment>Curbing/Copings product SP8.</rdfs:comment>
+    <rdfs:comment>Approximate pallet weight range (700–1400 kg) for SideLine series.</rdfs:comment>
+    <rdfs:comment>SideLine SP8 pallet weight range for the line.</rdfs:comment>
+    <maxAveragePalletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</maxAveragePalletWeightKg>
+    <palletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</palletWeightKg>
+    <palletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</palletWeightKg>
+    <minAverageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</minAverageStorageTimeDay>
+    <minAveragePalletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</minAveragePalletWeightKg>
+    <maxAverageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</maxAverageStorageTimeDay>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorB_CurbsCopingsDrain"/>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.10</dailyStorageCostEuroPerPallet>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SideLine_2618"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#maxSpacingCm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>maxSpacingCm</rdfs:label>
+    <rdfs:comment>Maximum spacing in centimeters associated to piecesPerSquareMeterAtMaxSpacing</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Truck">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Truck</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Road vehicle for transporting pallets.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#categoriesPath">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>categoriesPath</rdfs:label>
+    <rdfs:comment>Original category breadcrumb/path as provided</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasAreaSqM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasAreaSqM</rdfs:label>
+    <rdfs:comment>Associates a location (warehouse/sector) with its indoor area in square meters (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#EcoRing_2298">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#EcoRingCategory"/>
+    <rdfs:label>EcoRing_2298</rdfs:label>
+    <rdfs:comment>Concrete retaining wall product</rdfs:comment>
+    <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2298</id>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=2</imageURL>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=1</imageURL>
+    <modularDimensionsCm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46x55x12 - 20</modularDimensionsCm>
+    <blockWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58</blockWeightKg>
+    <shortDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The EcoRing system combines an intelligent circular shape with sustainable production and integrates with the environment by offering natural soil aeration.</shortDescription>
+    <hasInstallationMethod rdf:resource="http://example.com/warehouse-product-ontology#MachineInstallation"/>
+    <hasInstallationMethod rdf:resource="http://example.com/warehouse-product-ontology#ManualInstallation"/>
+    <piecesPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</piecesPerPallet>
+    <webPageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://example-company.com/prodotto/ecoring</webPageURL>
+    <piecesPerSquareMeterInAdherence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</piecesPerSquareMeterInAdherence>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoRing</name>
+    <hasColor rdf:resource="http://example.com/warehouse-product-ontology#Gray"/>
+    <hasColor rdf:resource="http://example.com/warehouse-product-ontology#Yellow"/>
+    <piecesPerSquareMeterAtMaxSpacing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.2</piecesPerSquareMeterAtMaxSpacing>
+    <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Available colors: Yellow, Gray. Placement at maximum spacing. Features: Manual installation, Machine installation.</description>
+    <categoriesPath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retaining Walls &gt; EcoRing</categoriesPath>
+    <maxSpacingCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</maxSpacingCm>
+    <technicalSheetURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.example-company.com/dummy.pdf</technicalSheetURL>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#EcoRing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#RetainingWalls">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>RetainingWalls</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#ProductCategory"/>
+    <rdfs:comment>Category for retaining walls products</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#OverheadCrane_1_10t">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#OverheadCrane"/>
+    <rdfs:label>OverheadCrane_1_10t</rdfs:label>
+    <rdfs:comment>Overhead crane with 10-ton capacity.</rdfs:comment>
+    <equipmentMaxLoadTon rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</equipmentMaxLoadTon>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#palletWeightKg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>palletWeightKg</rdfs:label>
+    <rdfs:comment>Total weight per pallet in kilograms (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SideLineSP10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>SideLineSP10</rdfs:label>
+    <rdfs:comment>Curbing/Copings product SP10.</rdfs:comment>
+    <rdfs:comment>SideLine SP10 pallet weight range for the line.</rdfs:comment>
+    <maxAveragePalletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</maxAveragePalletWeightKg>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorB_CurbsCopingsDrain"/>
+    <minAveragePalletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</minAveragePalletWeightKg>
+    <maxAverageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</maxAverageStorageTimeDay>
+    <minAverageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</minAverageStorageTimeDay>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.10</dailyStorageCostEuroPerPallet>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SideLine_2618"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#ProductCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ProductCategory</rdfs:label>
+    <rdfs:comment>Top-level product category</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SideLine_CURB_SP8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#ProductVariant"/>
+    <rdfs:label>SideLine_CURB_SP8</rdfs:label>
+    <rdfs:comment>Variant of SideLine</rdfs:comment>
+    <modularDimensionsCm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 x 8 x 25</modularDimensionsCm>
+    <piecesPerPack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</piecesPerPack>
+    <variantLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CURB SP8</variantLabel>
+    <weightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39</weightKg>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#piecesPerSquareMeterInAdherence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>piecesPerSquareMeterInAdherence</rdfs:label>
+    <rdfs:comment>Pieces per square meter in adherence (0 cm)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#ID_QRCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#IdentificationMethod"/>
+    <rdfs:label>ID_QRCode</rdfs:label>
+    <rdfs:comment>QR code identification method.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#InventorySystem_1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#InventoryManagementSystem"/>
+    <rdfs:label>InventorySystem_1</rdfs:label>
+    <rdfs:comment>IMS uses RFID.</rdfs:comment>
+    <rdfs:comment>Inventory management system used in the warehouse.</rdfs:comment>
+    <usesTrackingSystem rdf:resource="http://example.com/warehouse-product-ontology#Tracking_RFID"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SideLineSP12">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>SideLineSP12</rdfs:label>
+    <rdfs:comment>Curbing/Copings product SP12.</rdfs:comment>
+    <rdfs:comment>SideLine SP12 pallet weight range for the line.</rdfs:comment>
+    <maxAveragePalletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</maxAveragePalletWeightKg>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorB_CurbsCopingsDrain"/>
+    <minAveragePalletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</minAveragePalletWeightKg>
+    <maxAverageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</maxAverageStorageTimeDay>
+    <minAverageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</minAverageStorageTimeDay>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.10</dailyStorageCostEuroPerPallet>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SideLine_2618"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#palletsPer100SqM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>palletsPer100SqM</rdfs:label>
+    <rdfs:comment>Pallet capacity per 100 square meters (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#ProductVariant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ProductVariant</rdfs:label>
+    <rdfs:comment>Variant/configuration of a product</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#id">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>id</rdfs:label>
+    <rdfs:comment>Unique product identifier (string)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Palletization_EcoRing_20pp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#PalletizationScheme"/>
+    <rdfs:label>Palletization_EcoRing_20pp</rdfs:label>
+    <rdfs:comment>EcoRing palletization: 20 pieces per pallet.</rdfs:comment>
+    <palletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1160</palletWeightKg>
+    <piecesPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</piecesPerPallet>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#averagePreparationTimeMin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>averagePreparationTimeMin</rdfs:label>
+    <rdfs:comment>Average preparation time in minutes (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SectorC_Paving">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Sector"/>
+    <rdfs:label>SectorC_Paving</rdfs:label>
+    <rdfs:comment>Sector C with single-level racks for paving.</rdfs:comment>
+    <rdfs:comment>Sector C with picking area.</rdfs:comment>
+    <rdfs:comment>Sector C dedicated to outdoor paving products.</rdfs:comment>
+    <hasAreaSqM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</hasAreaSqM>
+    <hasPickingArea rdf:resource="http://example.com/warehouse-product-ontology#PickingArea_C"/>
+    <hasShelving rdf:resource="http://example.com/warehouse-product-ontology#Rack_SingleLevel_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Shelving_Metal_3Level">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#MetalShelving"/>
+    <rdfs:label>Shelving_Metal_3Level</rdfs:label>
+    <rdfs:comment>3-level metal shelving.</rdfs:comment>
+    <shelvingLevels rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</shelvingLevels>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Palletization_PavingGeneric_1200kg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#PalletizationScheme"/>
+    <rdfs:label>Palletization_PavingGeneric_1200kg</rdfs:label>
+    <rdfs:comment>Generic palletization for paving products with average pallet weight 1200 kg.</rdfs:comment>
+    <palletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</palletWeightKg>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#GrecCurb100_2626">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#CurbingCopingsDrainChannels"/>
+    <rdfs:label>GrecCurb100_2626</rdfs:label>
+    <rdfs:comment>Drain/curb component</rdfs:comment>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=18</imageURL>
+    <piecesPerLinearMeter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</piecesPerLinearMeter>
+    <modularDimensionsCm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 x 25 x 6 x 13</modularDimensionsCm>
+    <weightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</weightKg>
+    <webPageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://example-company.com/prodotto/greccurb100</webPageURL>
+    <technicalSheetURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.example-company.com/dummy.pdf</technicalSheetURL>
+    <piecesPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</piecesPerPallet>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GrecCurb100</name>
+    <categoriesPath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curbing, Copings &amp; Drain Channels</categoriesPath>
+    <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2626</id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasShelving">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasShelving</rdfs:label>
+    <rdfs:comment>Links a sector/warehouse to a shelving or rack system.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Aisle_DoubleHeight_1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#DoubleHeightAisle"/>
+    <rdfs:label>Aisle_DoubleHeight_1</rdfs:label>
+    <rdfs:comment>Double-height aisle used for compact storage.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SculptStone_2179">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#TraditionalStyle"/>
+    <rdfs:label>SculptStone_2179</rdfs:label>
+    <rdfs:comment>Traditional style outdoor paving product</rdfs:comment>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SculptStone</name>
+    <categoriesPath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outdoor Paving &gt; Traditional Style</categoriesPath>
+    <shortDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SculptStone combines a carved effect with strength, designed for elegant and durable outdoor environments.</shortDescription>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=23</imageURL>
+    <webPageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://example-company.com/prodotto/sculptstone</webPageURL>
+    <technicalSheetURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.example-company.com/dummy.pdf</technicalSheetURL>
+    <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2179</id>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SculptStone"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#modularDimensionsCm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>modularDimensionsCm</rdfs:label>
+    <rdfs:comment>Modular dimensions string in centimeters</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasTruckLoadingOperation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasTruckLoadingOperation</rdfs:label>
+    <rdfs:comment>Links a warehouse to a truck loading operation.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#stackedLevelsMax">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>stackedLevelsMax</rdfs:label>
+    <rdfs:comment>Maximum safe stacking levels for pallets (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SideLine_2618">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#CurbingCopingsDrainChannels"/>
+    <rdfs:label>SideLine_2618</rdfs:label>
+    <rdfs:comment>Curbing product</rdfs:comment>
+    <hasColor rdf:resource="http://example.com/warehouse-product-ontology#Sandstone"/>
+    <hasColor rdf:resource="http://example.com/warehouse-product-ontology#Hazelnut"/>
+    <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Available colors: Sandstone, Hazelnut.</description>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SideLine</name>
+    <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2618</id>
+    <categoriesPath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curbing, Copings &amp; Drain Channels</categoriesPath>
+    <technicalSheetURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.example-company.com/dummy.pdf</technicalSheetURL>
+    <hasVariant rdf:resource="http://example.com/warehouse-product-ontology#SideLine_CURB_SP10"/>
+    <hasVariant rdf:resource="http://example.com/warehouse-product-ontology#SideLine_CURB_SP12"/>
+    <hasVariant rdf:resource="http://example.com/warehouse-product-ontology#SideLine_CURB_SP8"/>
+    <hasVariant rdf:resource="http://example.com/warehouse-product-ontology#SideLine_CURB_SP15"/>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=17</imageURL>
+    <webPageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://example-company.com/prodotto/sideline</webPageURL>
+    <shortDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product available in various thicknesses; SP8 model also offered in Sandstone and Hazelnut colors.</shortDescription>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SideLineSP8"/>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SideLineSP10"/>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SideLineSP12"/>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SideLineSP15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasSector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasSector</rdfs:label>
+    <rdfs:comment>Links a warehouse to its sectors.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SideLineSP15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>SideLineSP15</rdfs:label>
+    <rdfs:comment>Curbing/Copings product; metrics from context assume SP15 variant is 69 kg/element, 24 pcs/pallet.</rdfs:comment>
+    <rdfs:comment>Curbing/Copings product SP15.</rdfs:comment>
+    <storageCostIncludes rdf:resource="http://example.com/warehouse-product-ontology#CostComponent_InsuranceHandlingDamage"/>
+    <averageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</averageStorageTimeDay>
+    <unitWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</unitWeightKg>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</dailyStorageCostEuroPerPallet>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.10</dailyStorageCostEuroPerPallet>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorB_CurbsCopingsDrain"/>
+    <usesPalletizationScheme rdf:resource="http://example.com/warehouse-product-ontology#Palletization_SideLineSP15_24pp"/>
+    <handledWithEquipment rdf:resource="http://example.com/warehouse-product-ontology#Forklift_Electric_Reinforced"/>
+    <maxAverageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</maxAverageStorageTimeDay>
+    <minAverageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</minAverageStorageTimeDay>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SideLine_2618"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasInstallationMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasInstallationMethod</rdfs:label>
+    <rdfs:comment>Links a product to an InstallationMethod individual</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MachineInstallation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#InstallationMethod"/>
+    <rdfs:label>MachineInstallation</rdfs:label>
+    <rdfs:comment>Installation method</rdfs:comment>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine installation</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#EcoRing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>EcoRing</rdfs:label>
+    <rdfs:comment>Retaining wall product.</rdfs:comment>
+    <rdfs:comment>EcoRing storage cost includes handling and surveillance.</rdfs:comment>
+    <unitWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58</unitWeightKg>
+    <approxTotalMassTonPer100SqM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</approxTotalMassTonPer100SqM>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.80</dailyStorageCostEuroPerPallet>
+    <storageCostIncludes rdf:resource="http://example.com/warehouse-product-ontology#CostComponent_Handling"/>
+    <storageCostIncludes rdf:resource="http://example.com/warehouse-product-ontology#CostComponent_Surveillance"/>
+    <usesPalletizationScheme rdf:resource="http://example.com/warehouse-product-ontology#Palletization_EcoRing_20pp"/>
+    <palletsPer100SqM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</palletsPer100SqM>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorA_RetainingWalls"/>
+    <averageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</averageStorageTimeDay>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#EcoRing_2298"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Shelving">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Shelving</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>General class for storage shelving structures.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MiniEcoRing_2334">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#MiniEcoRingCategory"/>
+    <rdfs:label>MiniEcoRing_2334</rdfs:label>
+    <rdfs:comment>Concrete retaining wall product</rdfs:comment>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=10</imageURL>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=9</imageURL>
+    <piecesPerSquareMeterAtMaxSpacing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.5</piecesPerSquareMeterAtMaxSpacing>
+    <piecesPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</piecesPerPallet>
+    <blockWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</blockWeightKg>
+    <hasInstallationMethod rdf:resource="http://example.com/warehouse-product-ontology#MachineInstallation"/>
+    <hasInstallationMethod rdf:resource="http://example.com/warehouse-product-ontology#ManualInstallation"/>
+    <shortDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MiniEcoRing is the compact version suitable for light slopes, offering versatility and easy installation while maintaining the advantages of the main system.</shortDescription>
+    <maxSpacingCm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</maxSpacingCm>
+    <categoriesPath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retaining Walls &gt; MiniEcoRing</categoriesPath>
+    <hasColor rdf:resource="http://example.com/warehouse-product-ontology#Gray"/>
+    <hasColor rdf:resource="http://example.com/warehouse-product-ontology#Yellow"/>
+    <webPageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://example-company.com/prodotto/miniecoring</webPageURL>
+    <modularDimensionsCm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35 x 30 x 15-16.5</modularDimensionsCm>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MiniEcoRing</name>
+    <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Available colors: Yellow, Gray. Standard installation pattern. Features: Manual installation, Machine installation.</description>
+    <technicalSheetURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.example-company.com/dummy.pdf</technicalSheetURL>
+    <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2334</id>
+    <piecesPerSquareMeterAt16cmSpacing rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</piecesPerSquareMeterAt16cmSpacing>
+    <piecesPerSquareMeterInAdherence rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</piecesPerSquareMeterInAdherence>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#MiniEcoRing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Rustika">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>Rustika</rdfs:label>
+    <rdfs:comment>Outdoor paving product.</rdfs:comment>
+    <usesPalletizationScheme rdf:resource="http://example.com/warehouse-product-ontology#Palletization_PavingGeneric_1200kg"/>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorC_Paving"/>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.90</dailyStorageCostEuroPerPallet>
+    <averageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</averageStorageTimeDay>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#Rustika_2091"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#unitWeightKg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>unitWeightKg</rdfs:label>
+    <rdfs:comment>Unit weight of a single product piece/block in kilograms (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Palletization_DrainConcaveDual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#PalletizationScheme"/>
+    <rdfs:label>Palletization_DrainConcaveDual</rdfs:label>
+    <rdfs:comment>DrainConcaveDual palletization and stacking constraints.</rdfs:comment>
+    <storageDensityTonPer50SqM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</storageDensityTonPer50SqM>
+    <stackedLevelsMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</stackedLevelsMax>
+    <piecesPerLinearMeter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</piecesPerLinearMeter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#storedInSector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>storedInSector</rdfs:label>
+    <rdfs:comment>Links a product to the sector where it is stored.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SideLine_CURB_SP12">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#ProductVariant"/>
+    <rdfs:label>SideLine_CURB_SP12</rdfs:label>
+    <rdfs:comment>Variant of SideLine</rdfs:comment>
+    <modularDimensionsCm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 x 12 x 25</modularDimensionsCm>
+    <variantLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CURB SP12</variantLabel>
+    <piecesPerPack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</piecesPerPack>
+    <weightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</weightKg>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Rustika_2091">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#TraditionalStyle"/>
+    <rdfs:label>Rustika_2091</rdfs:label>
+    <rdfs:comment>Traditional style outdoor paving product</rdfs:comment>
+    <categoriesPath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outdoor Paving &gt; Traditional Style</categoriesPath>
+    <shortDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rustika is a traditional aged-style paving, ideal for outdoor areas with a natural look.</shortDescription>
+    <technicalSheetURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.example-company.com/dummy.pdf</technicalSheetURL>
+    <webPageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://example-company.com/prodotto/rustika</webPageURL>
+    <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2091</id>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rustika</name>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=22</imageURL>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#Rustika"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Zone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Zone</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Sub-area used for zoning within sectors.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#truckAveragePalletsPerTrip">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>truckAveragePalletsPerTrip</rdfs:label>
+    <rdfs:comment>Average number of pallets per truck trip (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SectorA_RetainingWalls">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Sector"/>
+    <rdfs:label>SectorA_RetainingWalls</rdfs:label>
+    <rdfs:comment>Sector A dedicated to retaining walls.</rdfs:comment>
+    <rdfs:comment>Sector A with picking area.</rdfs:comment>
+    <hasAreaSqM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</hasAreaSqM>
+    <hasPickingArea rdf:resource="http://example.com/warehouse-product-ontology#PickingArea_A"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Forklift_Electric_Reinforced">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#ElectricForklift"/>
+    <rdfs:label>Forklift_Electric_Reinforced</rdfs:label>
+    <rdfs:comment>Electric forklift with reinforced forks.</rdfs:comment>
+    <hasEquipmentFeature rdf:resource="http://example.com/warehouse-product-ontology#EquipmentFeature_ReinforcedForks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SculptStone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>SculptStone</rdfs:label>
+    <rdfs:comment>Outdoor paving product.</rdfs:comment>
+    <usesPalletizationScheme rdf:resource="http://example.com/warehouse-product-ontology#Palletization_PavingGeneric_1200kg"/>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorC_Paving"/>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.90</dailyStorageCostEuroPerPallet>
+    <averageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</averageStorageTimeDay>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#SculptStone_2179"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Batch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Batch</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Group of items tracked together.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#CostComponent_Handling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#CostComponent"/>
+    <rdfs:label>CostComponent_Handling</rdfs:label>
+    <rdfs:comment>Handling cost component.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasVariant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasVariant</rdfs:label>
+    <rdfs:comment>Links a product to a ProductVariant individual</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#spaceOptimizationPercent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>spaceOptimizationPercent</rdfs:label>
+    <rdfs:comment>Space optimization percentage relative to a baseline (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Palletization_SideLineSP15_24pp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#PalletizationScheme"/>
+    <rdfs:label>Palletization_SideLineSP15_24pp</rdfs:label>
+    <rdfs:comment>SideLine SP15 palletization: 24 pieces per pallet.</rdfs:comment>
+    <palletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1656</palletWeightKg>
+    <piecesPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</piecesPerPallet>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Palletization_MiniEcoRing_60pp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#PalletizationScheme"/>
+    <rdfs:label>Palletization_MiniEcoRing_60pp</rdfs:label>
+    <rdfs:comment>MiniEcoRing palletization: 60 pieces per pallet.</rdfs:comment>
+    <palletWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1260</palletWeightKg>
+    <piecesPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</piecesPerPallet>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#CostComponent_Surveillance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#CostComponent"/>
+    <rdfs:label>CostComponent_Surveillance</rdfs:label>
+    <rdfs:comment>Surveillance cost component.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#LoadingArea_Main">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#LoadingArea"/>
+    <rdfs:label>LoadingArea_Main</rdfs:label>
+    <rdfs:comment>Loading area supports EcoRing and MiniEcoRing pallet handling.</rdfs:comment>
+    <rdfs:comment>Primary loading area for MainWarehouse.</rdfs:comment>
+    <supportsPalletizationScheme rdf:resource="http://example.com/warehouse-product-ontology#Palletization_EcoRing_20pp"/>
+    <supportsPalletizationScheme rdf:resource="http://example.com/warehouse-product-ontology#Palletization_MiniEcoRing_60pp"/>
+    <hasEquipment rdf:resource="http://example.com/warehouse-product-ontology#OverheadCrane_1_10t"/>
+    <hasEquipment rdf:resource="http://example.com/warehouse-product-ontology#OverheadCrane_2_10t"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Rack_SingleLevel_1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#SingleLevelRack"/>
+    <rdfs:label>Rack_SingleLevel_1</rdfs:label>
+    <rdfs:comment>Single-level rack for paving pallets.</rdfs:comment>
+    <shelvingLevels rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</shelvingLevels>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#OverheadCrane_2_10t">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#OverheadCrane"/>
+    <rdfs:label>OverheadCrane_2_10t</rdfs:label>
+    <rdfs:comment>Overhead crane with 10-ton capacity.</rdfs:comment>
+    <equipmentMaxLoadTon rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</equipmentMaxLoadTon>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#PalletizationScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>PalletizationScheme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Arrangement/packaging scheme of pieces per pallet and related metrics.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SideLine_CURB_SP15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#ProductVariant"/>
+    <rdfs:label>SideLine_CURB_SP15</rdfs:label>
+    <rdfs:comment>Variant of SideLine</rdfs:comment>
+    <piecesPerPack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</piecesPerPack>
+    <modularDimensionsCm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 x 15 x 25</modularDimensionsCm>
+    <weightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">76</weightKg>
+    <variantLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CURB SP15</variantLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#OverheadCrane">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>OverheadCrane</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Crane"/>
+    <rdfs:comment>Bridge crane installed overhead in warehouses.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#variantLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>variantLabel</rdfs:label>
+    <rdfs:comment>Human-readable label of a product variant</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MetalShelving">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>MetalShelving</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Shelving"/>
+    <rdfs:comment>Shelving made of metal, possibly multi-level.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#usesPackagingMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>usesPackagingMaterial</rdfs:label>
+    <rdfs:comment>Links a product or palletization to the packaging material used.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#HandlingEquipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>HandlingEquipment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Equipment used for handling loads.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#DrainConcaveDual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>DrainConcaveDual</rdfs:label>
+    <rdfs:comment>Drain channel element with fast turnover.</rdfs:comment>
+    <averageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</averageStorageTimeDay>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.45</dailyStorageCostEuroPerPallet>
+    <unitWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</unitWeightKg>
+    <usesPalletizationScheme rdf:resource="http://example.com/warehouse-product-ontology#Palletization_DrainConcaveDual"/>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorB_CurbsCopingsDrain"/>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#DrainConcaveDual_2633"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MaterialType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>MaterialType</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Type of material stored in the warehouse.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasEquipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasEquipment</rdfs:label>
+    <rdfs:comment>Links a location to an equipment individual present there.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Packaging_ShrinkFilm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#PackagingMaterial"/>
+    <rdfs:label>Packaging_ShrinkFilm</rdfs:label>
+    <rdfs:comment>Shrink film packaging.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#dailyStorageCostEuroPerPallet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>dailyStorageCostEuroPerPallet</rdfs:label>
+    <rdfs:comment>Daily storage cost per pallet in euros (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#includesProduct">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>includesProduct</rdfs:label>
+    <rdfs:comment>Links an order to the products it includes.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#PickingArea_A">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#PickingArea"/>
+    <rdfs:label>PickingArea_A</rdfs:label>
+    <rdfs:comment>Picking area for Sector A.</rdfs:comment>
+    <rdfs:comment>Automated picking area for Sector A.</rdfs:comment>
+    <usesAutomationSystem rdf:resource="http://example.com/warehouse-product-ontology#AutoOrderPrepSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#InventoryManagementSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>InventoryManagementSystem</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>System managing inventory and tracking in a warehouse.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#EquipmentFeature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>EquipmentFeature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Feature or attachment associated with a handling equipment.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasPickingArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasPickingArea</rdfs:label>
+    <rdfs:comment>Links a sector to its picking area.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Product</rdfs:label>
+    <rdfs:comment>Concrete product item.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#averageStorageTimeDay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>averageStorageTimeDay</rdfs:label>
+    <rdfs:comment>Average storage time in days (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MainWarehouse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Warehouse"/>
+    <rdfs:label>MainWarehouse</rdfs:label>
+    <rdfs:comment>Main warehouse with equipment, IMS, and sectors.</rdfs:comment>
+    <rdfs:comment>Main warehouse dedicated to retaining walls (indoors).</rdfs:comment>
+    <hasInventoryManagementSystem rdf:resource="http://example.com/warehouse-product-ontology#InventorySystem_1"/>
+    <hasEquipment rdf:resource="http://example.com/warehouse-product-ontology#OverheadCrane_1_10t"/>
+    <hasEquipment rdf:resource="http://example.com/warehouse-product-ontology#OverheadCrane_2_10t"/>
+    <hasLoadingArea rdf:resource="http://example.com/warehouse-product-ontology#LoadingArea_Main"/>
+    <hasMaterialType rdf:resource="http://example.com/warehouse-product-ontology#VibroCompressedConcrete"/>
+    <hasTruckLoadingOperation rdf:resource="http://example.com/warehouse-product-ontology#TruckLoading_Op1"/>
+    <hasSector rdf:resource="http://example.com/warehouse-product-ontology#SectorA_RetainingWalls"/>
+    <hasSector rdf:resource="http://example.com/warehouse-product-ontology#SectorB_CurbsCopingsDrain"/>
+    <hasSector rdf:resource="http://example.com/warehouse-product-ontology#SectorC_Paving"/>
+    <hasAreaSqM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</hasAreaSqM>
+    <hasStorageCapacityTon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3200</hasStorageCapacityTon>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MixedOrder_Example1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#MixedOrder"/>
+    <rdfs:label>MixedOrder_Example1</rdfs:label>
+    <rdfs:comment>Example mixed order (EcoRing + SideLine).</rdfs:comment>
+    <averagePreparationTimeMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</averagePreparationTimeMin>
+    <includesProduct rdf:resource="http://example.com/warehouse-product-ontology#EcoRing"/>
+    <includesProduct rdf:resource="http://example.com/warehouse-product-ontology#SideLineSP8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#monitorsFlowType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>monitorsFlowType</rdfs:label>
+    <rdfs:comment>Links a tracking system to the flow types it monitors.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Hazelnut">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Color"/>
+    <rdfs:label>Hazelnut</rdfs:label>
+    <rdfs:comment>Color value</rdfs:comment>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hazelnut</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#storageDensityTonPer50SqM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>storageDensityTonPer50SqM</rdfs:label>
+    <rdfs:comment>Storage density measured as tons per 50 square meters (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#PickingArea_C">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#PickingArea"/>
+    <rdfs:label>PickingArea_C</rdfs:label>
+    <rdfs:comment>Automated picking area for Sector C.</rdfs:comment>
+    <rdfs:comment>Picking area for Sector C.</rdfs:comment>
+    <usesAutomationSystem rdf:resource="http://example.com/warehouse-product-ontology#AutoOrderPrepSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#describedAlsoBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:label>describedAlsoBy</rdfs:label>
+    <rdfs:comment>Links a core product individual to external or catalog/marketing record individuals that describe the same product.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#InstallationMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>InstallationMethod</rdfs:label>
+    <rdfs:comment>Installation method feature value</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Rack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Rack</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Shelving"/>
+    <rdfs:comment>Racking system for pallets.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#DoubleHeightAisle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>DoubleHeightAisle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Aisle"/>
+    <rdfs:comment>Aisle supporting double-height storage.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#ManualInstallation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#InstallationMethod"/>
+    <rdfs:label>ManualInstallation</rdfs:label>
+    <rdfs:comment>Installation method</rdfs:comment>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manual installation</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SideLine_CURB_SP10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#ProductVariant"/>
+    <rdfs:label>SideLine_CURB_SP10</rdfs:label>
+    <rdfs:comment>Variant of SideLine</rdfs:comment>
+    <variantLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CURB SP10</variantLabel>
+    <modularDimensionsCm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 x 10 x 25</modularDimensionsCm>
+    <weightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</weightKg>
+    <piecesPerPack rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</piecesPerPack>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#CostComponent_InsuranceHandlingDamage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#CostComponent"/>
+    <rdfs:label>CostComponent_InsuranceHandlingDamage</rdfs:label>
+    <rdfs:comment>Insurance coverage for handling-related damage.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#TruckLoading_Op1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#TruckLoadingOperation"/>
+    <rdfs:label>TruckLoading_Op1</rdfs:label>
+    <rdfs:comment>Truck loading operation with average pallets per trip.</rdfs:comment>
+    <truckAveragePalletsPerTrip rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</truckAveragePalletsPerTrip>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#thicknessMm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>thicknessMm</rdfs:label>
+    <rdfs:comment>Thickness in millimeters (string/number)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MiniEcoRingCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>MiniEcoRingCategory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#RetainingWalls"/>
+    <rdfs:comment>MiniEcoRing product family under retaining walls</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#weightKg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>weightKg</rdfs:label>
+    <rdfs:comment>Weight in kilograms (string/number)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#technicalSheetURL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>technicalSheetURL</rdfs:label>
+    <rdfs:comment>URL to technical sheet PDF</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#CurbingCopingsDrainChannels">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>CurbingCopingsDrainChannels</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#ProductCategory"/>
+    <rdfs:comment>Category for curbing, copings and drain channel products</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#storedInAisleType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>storedInAisleType</rdfs:label>
+    <rdfs:comment>Links a product to the type of aisle used to store it.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#WavePaveCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>WavePaveCategory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#OutdoorPaving"/>
+    <rdfs:comment>WavePave product family under outdoor paving</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#shortDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>shortDescription</rdfs:label>
+    <rdfs:comment>Short marketing description</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MarkingScheme_Thickness_Color">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#MarkingScheme"/>
+    <rdfs:label>MarkingScheme_Thickness_Color</rdfs:label>
+    <rdfs:comment>Zones marked by thickness and color.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Order">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Order</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Customer order handled in the warehouse.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#usesPalletizationScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>usesPalletizationScheme</rdfs:label>
+    <rdfs:comment>Links a product to its palletization scheme.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#IdentificationMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>IdentificationMethod</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Method used to identify items (e.g., QR code).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#usesIdentificationMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>usesIdentificationMethod</rdfs:label>
+    <rdfs:comment>Links a product or system to an identification method used (e.g., QR code).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#usesTrackingSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>usesTrackingSystem</rdfs:label>
+    <rdfs:comment>Links an inventory management system to a tracking system (e.g., RFID).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#shelvingLevels">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>shelvingLevels</rdfs:label>
+    <rdfs:comment>Number of levels on a shelving or rack (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#PickingArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>PickingArea</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Area dedicated to picking and order preparation.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Sector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Sector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Designated area/section within a warehouse.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#storageCostIncludes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>storageCostIncludes</rdfs:label>
+    <rdfs:comment>Links a product's storage cost to included components (e.g., handling, surveillance, insurance).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#ElectricForklift">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ElectricForklift</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Forklift"/>
+    <rdfs:comment>Forklift powered by electricity.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Gray">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Color"/>
+    <rdfs:label>Gray</rdfs:label>
+    <rdfs:comment>Color value</rdfs:comment>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gray</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#minAverageStorageTimeDay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>minAverageStorageTimeDay</rdfs:label>
+    <rdfs:comment>Minimum average storage time in days when a range is given (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasInventoryManagementSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasInventoryManagementSystem</rdfs:label>
+    <rdfs:comment>Links a warehouse to its inventory management system.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>name</rdfs:label>
+    <rdfs:comment>Human-readable name</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#LoadingArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>LoadingArea</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Area in or near a warehouse where loading/unloading occurs.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasStorageCapacityTon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasStorageCapacityTon</rdfs:label>
+    <rdfs:comment>Associates a warehouse with its total storage capacity in metric tons (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#PickingArea_B">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#PickingArea"/>
+    <rdfs:label>PickingArea_B</rdfs:label>
+    <rdfs:comment>Picking area for Sector B.</rdfs:comment>
+    <rdfs:comment>Automated picking area for Sector B.</rdfs:comment>
+    <usesAutomationSystem rdf:resource="http://example.com/warehouse-product-ontology#AutoOrderPrepSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Tracking_RFID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#TrackingSystem"/>
+    <rdfs:label>Tracking_RFID</rdfs:label>
+    <rdfs:comment>RFID monitors incoming and outgoing batches.</rdfs:comment>
+    <rdfs:comment>RFID tracking technology.</rdfs:comment>
+    <monitorsFlowType rdf:resource="http://example.com/warehouse-product-ontology#Flow_IncomingBatch"/>
+    <monitorsFlowType rdf:resource="http://example.com/warehouse-product-ontology#Flow_OutgoingBatch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Warehouse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Warehouse</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Building or facility used to store products.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#FlowType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>FlowType</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Type of material flow (incoming/outgoing).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#PackagingMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>PackagingMaterial</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Material used to package loads.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#AutoOrderPrepSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#AutomationSystem"/>
+    <rdfs:label>AutoOrderPrepSystem</rdfs:label>
+    <rdfs:comment>Automated order preparation system used in picking areas.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#OutdoorPaving">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>OutdoorPaving</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#ProductCategory"/>
+    <rdfs:comment>Category for outdoor paving products</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasLoadingArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasLoadingArea</rdfs:label>
+    <rdfs:comment>Links a warehouse to a loading area.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>description</rdfs:label>
+    <rdfs:comment>Long description</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#piecesPerPallet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>piecesPerPallet</rdfs:label>
+    <rdfs:comment>Pieces per pallet</rdfs:comment>
+    <rdfs:comment>Number of pieces per pallet (numeric literal) for a palletization scheme.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#CostComponent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>CostComponent</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Component included in a cost (e.g., handling, surveillance, insurance).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MiniEcoRing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>MiniEcoRing</rdfs:label>
+    <rdfs:comment>Smaller retaining wall product.</rdfs:comment>
+    <spaceOptimizationPercent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</spaceOptimizationPercent>
+    <unitWeightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</unitWeightKg>
+    <usesPalletizationScheme rdf:resource="http://example.com/warehouse-product-ontology#Palletization_MiniEcoRing_60pp"/>
+    <usesIdentificationMethod rdf:resource="http://example.com/warehouse-product-ontology#ID_QRCode"/>
+    <comparedToProduct rdf:resource="http://example.com/warehouse-product-ontology#EcoRing"/>
+    <storedInAisleType rdf:resource="http://example.com/warehouse-product-ontology#Aisle_DoubleHeight_1"/>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.55</dailyStorageCostEuroPerPallet>
+    <usesPackagingMaterial rdf:resource="http://example.com/warehouse-product-ontology#Packaging_ShrinkFilm"/>
+    <averageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</averageStorageTimeDay>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorA_RetainingWalls"/>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#MiniEcoRing_2334"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#TrackingSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>TrackingSystem</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Technology to track items (e.g., RFID).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasEquipmentFeature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasEquipmentFeature</rdfs:label>
+    <rdfs:comment>Links an equipment individual to a feature individual.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SingleLevelRack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>SingleLevelRack</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Rack"/>
+    <rdfs:comment>Rack configured for a single level.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MarkingScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>MarkingScheme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Method to mark or categorize zones (e.g., by thickness, by color).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Yellow">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Color"/>
+    <rdfs:label>Yellow</rdfs:label>
+    <rdfs:comment>Color value</rdfs:comment>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yellow</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#imageURL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>imageURL</rdfs:label>
+    <rdfs:comment>Image URL for the product</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Flow_OutgoingBatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#FlowType"/>
+    <rdfs:label>Flow_OutgoingBatch</rdfs:label>
+    <rdfs:comment>Outgoing batch flow type.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#DrainConcaveDual_2633">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#CurbingCopingsDrainChannels"/>
+    <rdfs:label>DrainConcaveDual_2633</rdfs:label>
+    <rdfs:comment>Drain channel component</rdfs:comment>
+    <weightKg rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</weightKg>
+    <piecesPerLinearMeter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</piecesPerLinearMeter>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=19</imageURL>
+    <technicalSheetURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.example-company.com/dummy.pdf</technicalSheetURL>
+    <webPageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://example-company.com/prodotto/drainconcavedual</webPageURL>
+    <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2633</id>
+    <modularDimensionsCm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40 x 50 x H10 - x H8</modularDimensionsCm>
+    <categoriesPath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curbing, Copings &amp; Drain Channels</categoriesPath>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DrainConcaveDual</name>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#DrainConcaveDual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#handledWithEquipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>handledWithEquipment</rdfs:label>
+    <rdfs:comment>Links a product to handling equipment used for it.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Aisle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Aisle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Corridor or passage in a warehouse.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Crane">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Crane</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#HandlingEquipment"/>
+    <rdfs:comment>Lifting equipment with high capacity.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#SectorB_CurbsCopingsDrain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Sector"/>
+    <rdfs:label>SectorB_CurbsCopingsDrain</rdfs:label>
+    <rdfs:comment>Sector B with 3-level metal shelving and zones by thickness and color.</rdfs:comment>
+    <rdfs:comment>Sector B with picking area.</rdfs:comment>
+    <rdfs:comment>Sector B dedicated to curbs, copings &amp; drain channels.</rdfs:comment>
+    <hasShelving rdf:resource="http://example.com/warehouse-product-ontology#Shelving_Metal_3Level"/>
+    <hasZoningCriteria rdf:resource="http://example.com/warehouse-product-ontology#MarkingScheme_Thickness_Color"/>
+    <hasPickingArea rdf:resource="http://example.com/warehouse-product-ontology#PickingArea_B"/>
+    <hasAreaSqM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</hasAreaSqM>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#usesAutomationSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>usesAutomationSystem</rdfs:label>
+    <rdfs:comment>Links a picking area to an automation system.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#piecesPerLinearMeter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>piecesPerLinearMeter</rdfs:label>
+    <rdfs:comment>Pieces per linear meter (Pcs/ml)</rdfs:comment>
+    <rdfs:comment>Number of pieces per linear meter for palletized elements (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#webPageURL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>webPageURL</rdfs:label>
+    <rdfs:comment>Canonical product web page URL</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#piecesPerSquareMeterAt16cmSpacing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>piecesPerSquareMeterAt16cmSpacing</rdfs:label>
+    <rdfs:comment>Pieces per square meter at 16 cm spacing</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#WavePave">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Product"/>
+    <rdfs:label>WavePave</rdfs:label>
+    <rdfs:comment>Outdoor paving product.</rdfs:comment>
+    <usesPalletizationScheme rdf:resource="http://example.com/warehouse-product-ontology#Palletization_PavingGeneric_1200kg"/>
+    <storedInSector rdf:resource="http://example.com/warehouse-product-ontology#SectorC_Paving"/>
+    <dailyStorageCostEuroPerPallet rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.90</dailyStorageCostEuroPerPallet>
+    <averageStorageTimeDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</averageStorageTimeDay>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#WavePave_1074"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#supportsPalletizationScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>supportsPalletizationScheme</rdfs:label>
+    <rdfs:comment>Links a loading area to the palletization schemes it can handle.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Sandstone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#Color"/>
+    <rdfs:label>Sandstone</rdfs:label>
+    <rdfs:comment>Color value</rdfs:comment>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sandstone</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#WavePave_1074">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#WavePaveCategory"/>
+    <rdfs:label>WavePave_1074</rdfs:label>
+    <rdfs:comment>Outdoor paving product</rdfs:comment>
+    <id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1074</id>
+    <thicknessMm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</thicknessMm>
+    <categoriesPath rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outdoor Paving &gt; WavePave</categoriesPath>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=21</imageURL>
+    <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://picsum.photos/400/300?random=20</imageURL>
+    <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WavePave</name>
+    <technicalSheetURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.example-company.com/dummy.pdf</technicalSheetURL>
+    <webPageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://example-company.com/prodotto/wavepave</webPageURL>
+    <shortDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WavePave is an outdoor paving system designed for durability and aesthetics, suitable for open environments.</shortDescription>
+    <describedAlsoBy rdf:resource="http://example.com/warehouse-product-ontology#WavePave"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Forklift">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Forklift</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#HandlingEquipment"/>
+    <rdfs:comment>Industrial truck used to lift and move materials.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#EcoRingCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>EcoRingCategory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#RetainingWalls"/>
+    <rdfs:comment>EcoRing product family under retaining walls</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#AutomationSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>AutomationSystem</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Automated system used in order preparation.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Pallet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Pallet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Platform for handling and storing goods.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Color">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Color</rdfs:label>
+    <rdfs:comment>Color value for products</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#VibroCompressedConcrete">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#MaterialType"/>
+    <rdfs:label>VibroCompressedConcrete</rdfs:label>
+    <rdfs:comment>Material type stored as vibro-compressed concrete.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#MixedOrder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>MixedOrder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Order"/>
+    <rdfs:comment>Order containing multiple product types.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasZoningCriteria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasZoningCriteria</rdfs:label>
+    <rdfs:comment>Links a sector to a marking scheme used for zoning.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#maxAverageStorageTimeDay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>maxAverageStorageTimeDay</rdfs:label>
+    <rdfs:comment>Maximum average storage time in days when a range is given (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#minAveragePalletWeightKg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>minAveragePalletWeightKg</rdfs:label>
+    <rdfs:comment>Minimum of the average pallet weight range in kilograms (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasMaterialType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasMaterialType</rdfs:label>
+    <rdfs:comment>Links a warehouse or sector to the type of material stored.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#piecesPerSquareMeterAtMaxSpacing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>piecesPerSquareMeterAtMaxSpacing</rdfs:label>
+    <rdfs:comment>Pieces per square meter at maximum spacing</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#comparedToProduct">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>comparedToProduct</rdfs:label>
+    <rdfs:comment>Links a performance metric to the baseline product being compared to.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#hasColor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasColor</rdfs:label>
+    <rdfs:comment>Links a product to a Color individual</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#approxTotalMassTonPer100SqM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>approxTotalMassTonPer100SqM</rdfs:label>
+    <rdfs:comment>Approximate total stored mass in tons per 100 square meters (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#TruckLoadingOperation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>TruckLoadingOperation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#Logistic"/>
+    <rdfs:comment>Activity involving loading pallets on trucks.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#TraditionalStyle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>TraditionalStyle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.com/warehouse-product-ontology#OutdoorPaving"/>
+    <rdfs:comment>Traditional style subcategory of outdoor paving</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Logistic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Logistic</rdfs:label>
+    <rdfs:comment>Root class for logistics-related concepts.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#Flow_IncomingBatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#FlowType"/>
+    <rdfs:label>Flow_IncomingBatch</rdfs:label>
+    <rdfs:comment>Incoming batch flow type.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#EquipmentFeature_ReinforcedForks">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.com/warehouse-product-ontology#EquipmentFeature"/>
+    <rdfs:label>EquipmentFeature_ReinforcedForks</rdfs:label>
+    <rdfs:comment>Reinforced forks feature for forklifts.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>Ontology generated from provided product and logistics data. Includes classes, properties, and individuals.</rdfs:comment>
+    <owl:versionIRI rdf:resource="http://example.com/warehouse-product-ontology/1.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#maxAveragePalletWeightKg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>maxAveragePalletWeightKg</rdfs:label>
+    <rdfs:comment>Maximum of the average pallet weight range in kilograms (numeric literal).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#blockWeightKg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>blockWeightKg</rdfs:label>
+    <rdfs:comment>Block weight in kilograms (string/number)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#piecesPerPack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>piecesPerPack</rdfs:label>
+    <rdfs:comment>Pieces per pack</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.com/warehouse-product-ontology#equipmentMaxLoadTon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>equipmentMaxLoadTon</rdfs:label>
+    <rdfs:comment>Max load capacity in tons for a handling equipment (numeric literal).</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

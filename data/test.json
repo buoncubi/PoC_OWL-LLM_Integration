@@ -1,0 +1,22 @@
+[
+    {"query": "What are the available colors for the EcoRing retaining wall blocks?", "expected": "Yellow, Gray"},
+    {"query": "What is the unit weight of one EcoRing block?",  "expected": "58 kg"},
+    {"query": "How many EcoRing blocks are placed on each pallet?",  "expected": "20 pieces per pallet"},
+    {"query": "What is the average storage time in the warehouse for EcoRing?",  "expected": "14 days"},
+    {"query": "What is the storage cost per day for an EcoRing pallet?", "expected": "€0.80/day per pallet"},
+    {"query": "What are the available colors for the SideLine SP8 model?",  "expected": "Sandstone, Hazelnut"},
+    {"query": "What is the weight per piece for SideLine SP15?", "expected": "76 kg"},
+    {"query": "How many GrecCurb100 pieces fit on a single pallet?", "expected": "24 pieces per pallet"},
+    {"query": "What is the weight of one GrecCurb100 element?",  "expected": "69 kg"},
+    {"query": "Which product is the heaviest to handle in the warehouse?",  "expected": "GrecCurb100 (69 kg per element)"},
+    {"query": "Which product has the shortest average storage time?", "expected": "DrainConcaveDual (7 days)"},
+    {"query": "What is the storage density of the DrainConcaveDual product?",  "expected": "10 tons per 50 m²"},
+    {"query": "What is the warehouse's total storage capacity?",  "expected": "3,200 tons of vibro-compressed concrete"},
+    {"query": "How is the warehouse organized by sector?", "expected": "Sector A: retaining walls, Sector B: curbs & copings, Sector C: paving"},
+    {"query": "What is the average warehouse stock time across all product lines?",  "expected": "16 days"},
+    {"query": "What is the turnover rate for all products combined?",  "expected": "No data available"},
+    {"query": "What is the daily storage cost for GrecCurb100 pallets?",  "expected": "€1.25/day per pallet"},
+    {"query": "What is the ERP system's replenishment frequency for retaining wall products?",  "expected": "Twice per week"},
+    {"query": "Can you list the image URLs for all outdoor paving products?",  "expected": "List of all WavePave, Rustika, and SculptStone image URLs (4 total)"},
+    {"query": "What is the total covered area of the main warehouse for retaining walls?",  "expected": "2,500 m²"}
+]

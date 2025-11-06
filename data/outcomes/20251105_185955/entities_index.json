@@ -1,0 +1,2417 @@
+{
+    "tbox_classes": {
+        "ProductCategory": {
+            "name": "ProductCategory",
+            "subclassOf": [],
+            "role": [
+                "Top-level product category"
+            ]
+        },
+        "RetainingWalls": {
+            "name": "RetainingWalls",
+            "subclassOf": [
+                "ProductCategory"
+            ],
+            "role": [
+                "Category for retaining walls products"
+            ]
+        },
+        "CurbingCopingsDrainChannels": {
+            "name": "CurbingCopingsDrainChannels",
+            "subclassOf": [
+                "ProductCategory"
+            ],
+            "role": [
+                "Category for curbing, copings and drain channel products"
+            ]
+        },
+        "OutdoorPaving": {
+            "name": "OutdoorPaving",
+            "subclassOf": [
+                "ProductCategory"
+            ],
+            "role": [
+                "Category for outdoor paving products"
+            ]
+        },
+        "TraditionalStyle": {
+            "name": "TraditionalStyle",
+            "subclassOf": [
+                "OutdoorPaving"
+            ],
+            "role": [
+                "Traditional style subcategory of outdoor paving"
+            ]
+        },
+        "EcoRingCategory": {
+            "name": "EcoRingCategory",
+            "subclassOf": [
+                "RetainingWalls"
+            ],
+            "role": [
+                "EcoRing product family under retaining walls"
+            ]
+        },
+        "MiniEcoRingCategory": {
+            "name": "MiniEcoRingCategory",
+            "subclassOf": [
+                "RetainingWalls"
+            ],
+            "role": [
+                "MiniEcoRing product family under retaining walls"
+            ]
+        },
+        "WavePaveCategory": {
+            "name": "WavePaveCategory",
+            "subclassOf": [
+                "OutdoorPaving"
+            ],
+            "role": [
+                "WavePave product family under outdoor paving"
+            ]
+        },
+        "Color": {
+            "name": "Color",
+            "subclassOf": [],
+            "role": [
+                "Color value for products"
+            ]
+        },
+        "InstallationMethod": {
+            "name": "InstallationMethod",
+            "subclassOf": [],
+            "role": [
+                "Installation method feature value"
+            ]
+        },
+        "ProductVariant": {
+            "name": "ProductVariant",
+            "subclassOf": [],
+            "role": [
+                "Variant/configuration of a product"
+            ]
+        },
+        "Logistic": {
+            "name": "Logistic",
+            "subclassOf": [],
+            "role": [
+                "Root class for logistics-related concepts."
+            ]
+        },
+        "Warehouse": {
+            "name": "Warehouse",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Building or facility used to store products."
+            ]
+        },
+        "Sector": {
+            "name": "Sector",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Designated area/section within a warehouse."
+            ]
+        },
+        "LoadingArea": {
+            "name": "LoadingArea",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Area in or near a warehouse where loading/unloading occurs."
+            ]
+        },
+        "HandlingEquipment": {
+            "name": "HandlingEquipment",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Equipment used for handling loads."
+            ]
+        },
+        "Crane": {
+            "name": "Crane",
+            "subclassOf": [
+                "HandlingEquipment"
+            ],
+            "role": [
+                "Lifting equipment with high capacity."
+            ]
+        },
+        "OverheadCrane": {
+            "name": "OverheadCrane",
+            "subclassOf": [
+                "Crane"
+            ],
+            "role": [
+                "Bridge crane installed overhead in warehouses."
+            ]
+        },
+        "Forklift": {
+            "name": "Forklift",
+            "subclassOf": [
+                "HandlingEquipment"
+            ],
+            "role": [
+                "Industrial truck used to lift and move materials."
+            ]
+        },
+        "ElectricForklift": {
+            "name": "ElectricForklift",
+            "subclassOf": [
+                "Forklift"
+            ],
+            "role": [
+                "Forklift powered by electricity."
+            ]
+        },
+        "Pallet": {
+            "name": "Pallet",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Platform for handling and storing goods."
+            ]
+        },
+        "PalletizationScheme": {
+            "name": "PalletizationScheme",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Arrangement/packaging scheme of pieces per pallet and related metrics."
+            ]
+        },
+        "PackagingMaterial": {
+            "name": "PackagingMaterial",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Material used to package loads."
+            ]
+        },
+        "IdentificationMethod": {
+            "name": "IdentificationMethod",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Method used to identify items (e.g., QR code)."
+            ]
+        },
+        "InventoryManagementSystem": {
+            "name": "InventoryManagementSystem",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "System managing inventory and tracking in a warehouse."
+            ]
+        },
+        "TrackingSystem": {
+            "name": "TrackingSystem",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Technology to track items (e.g., RFID)."
+            ]
+        },
+        "Shelving": {
+            "name": "Shelving",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "General class for storage shelving structures."
+            ]
+        },
+        "MetalShelving": {
+            "name": "MetalShelving",
+            "subclassOf": [
+                "Shelving"
+            ],
+            "role": [
+                "Shelving made of metal, possibly multi-level."
+            ]
+        },
+        "Rack": {
+            "name": "Rack",
+            "subclassOf": [
+                "Shelving"
+            ],
+            "role": [
+                "Racking system for pallets."
+            ]
+        },
+        "SingleLevelRack": {
+            "name": "SingleLevelRack",
+            "subclassOf": [
+                "Rack"
+            ],
+            "role": [
+                "Rack configured for a single level."
+            ]
+        },
+        "Aisle": {
+            "name": "Aisle",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Corridor or passage in a warehouse."
+            ]
+        },
+        "DoubleHeightAisle": {
+            "name": "DoubleHeightAisle",
+            "subclassOf": [
+                "Aisle"
+            ],
+            "role": [
+                "Aisle supporting double-height storage."
+            ]
+        },
+        "PickingArea": {
+            "name": "PickingArea",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Area dedicated to picking and order preparation."
+            ]
+        },
+        "Truck": {
+            "name": "Truck",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Road vehicle for transporting pallets."
+            ]
+        },
+        "TruckLoadingOperation": {
+            "name": "TruckLoadingOperation",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Activity involving loading pallets on trucks."
+            ]
+        },
+        "Order": {
+            "name": "Order",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Customer order handled in the warehouse."
+            ]
+        },
+        "MixedOrder": {
+            "name": "MixedOrder",
+            "subclassOf": [
+                "Order"
+            ],
+            "role": [
+                "Order containing multiple product types."
+            ]
+        },
+        "Batch": {
+            "name": "Batch",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Group of items tracked together."
+            ]
+        },
+        "FlowType": {
+            "name": "FlowType",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Type of material flow (incoming/outgoing)."
+            ]
+        },
+        "Zone": {
+            "name": "Zone",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Sub-area used for zoning within sectors."
+            ]
+        },
+        "MarkingScheme": {
+            "name": "MarkingScheme",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Method to mark or categorize zones (e.g., by thickness, by color)."
+            ]
+        },
+        "AutomationSystem": {
+            "name": "AutomationSystem",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Automated system used in order preparation."
+            ]
+        },
+        "MaterialType": {
+            "name": "MaterialType",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Type of material stored in the warehouse."
+            ]
+        },
+        "CostComponent": {
+            "name": "CostComponent",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Component included in a cost (e.g., handling, surveillance, insurance)."
+            ]
+        },
+        "EquipmentFeature": {
+            "name": "EquipmentFeature",
+            "subclassOf": [
+                "Logistic"
+            ],
+            "role": [
+                "Feature or attachment associated with a handling equipment."
+            ]
+        }
+    },
+    "tbox_prop": {
+        "id": {
+            "name": "id",
+            "role": [
+                "Unique product identifier (string)"
+            ]
+        },
+        "name": {
+            "name": "name",
+            "role": [
+                "Human-readable name"
+            ]
+        },
+        "shortDescription": {
+            "name": "shortDescription",
+            "role": [
+                "Short marketing description"
+            ]
+        },
+        "description": {
+            "name": "description",
+            "role": [
+                "Long description"
+            ]
+        },
+        "webPageURL": {
+            "name": "webPageURL",
+            "role": [
+                "Canonical product web page URL"
+            ]
+        },
+        "technicalSheetURL": {
+            "name": "technicalSheetURL",
+            "role": [
+                "URL to technical sheet PDF"
+            ]
+        },
+        "imageURL": {
+            "name": "imageURL",
+            "role": [
+                "Image URL for the product"
+            ]
+        },
+        "categoriesPath": {
+            "name": "categoriesPath",
+            "role": [
+                "Original category breadcrumb/path as provided"
+            ]
+        },
+        "modularDimensionsCm": {
+            "name": "modularDimensionsCm",
+            "role": [
+                "Modular dimensions string in centimeters"
+            ]
+        },
+        "blockWeightKg": {
+            "name": "blockWeightKg",
+            "role": [
+                "Block weight in kilograms (string/number)"
+            ]
+        },
+        "weightKg": {
+            "name": "weightKg",
+            "role": [
+                "Weight in kilograms (string/number)"
+            ]
+        },
+        "thicknessMm": {
+            "name": "thicknessMm",
+            "role": [
+                "Thickness in millimeters (string/number)"
+            ]
+        },
+        "piecesPerSquareMeterAtMaxSpacing": {
+            "name": "piecesPerSquareMeterAtMaxSpacing",
+            "role": [
+                "Pieces per square meter at maximum spacing"
+            ]
+        },
+        "maxSpacingCm": {
+            "name": "maxSpacingCm",
+            "role": [
+                "Maximum spacing in centimeters associated to piecesPerSquareMeterAtMaxSpacing"
+            ]
+        },
+        "piecesPerSquareMeterAt16cmSpacing": {
+            "name": "piecesPerSquareMeterAt16cmSpacing",
+            "role": [
+                "Pieces per square meter at 16 cm spacing"
+            ]
+        },
+        "piecesPerSquareMeterInAdherence": {
+            "name": "piecesPerSquareMeterInAdherence",
+            "role": [
+                "Pieces per square meter in adherence (0 cm)"
+            ]
+        },
+        "piecesPerPallet": {
+            "name": "piecesPerPallet",
+            "role": [
+                "Pieces per pallet",
+                "Number of pieces per pallet (numeric literal) for a palletization scheme."
+            ]
+        },
+        "piecesPerPack": {
+            "name": "piecesPerPack",
+            "role": [
+                "Pieces per pack"
+            ]
+        },
+        "piecesPerLinearMeter": {
+            "name": "piecesPerLinearMeter",
+            "role": [
+                "Pieces per linear meter (Pcs/ml)",
+                "Number of pieces per linear meter for palletized elements (numeric literal)."
+            ]
+        },
+        "hasColor": {
+            "name": "hasColor",
+            "role": [
+                "Links a product to a Color individual"
+            ]
+        },
+        "hasInstallationMethod": {
+            "name": "hasInstallationMethod",
+            "role": [
+                "Links a product to an InstallationMethod individual"
+            ]
+        },
+        "hasVariant": {
+            "name": "hasVariant",
+            "role": [
+                "Links a product to a ProductVariant individual"
+            ]
+        },
+        "variantLabel": {
+            "name": "variantLabel",
+            "role": [
+                "Human-readable label of a product variant"
+            ]
+        },
+        "hasAreaSqM": {
+            "name": "hasAreaSqM",
+            "role": [
+                "Associates a location (warehouse/sector) with its indoor area in square meters (numeric literal)."
+            ]
+        },
+        "hasStorageCapacityTon": {
+            "name": "hasStorageCapacityTon",
+            "role": [
+                "Associates a warehouse with its total storage capacity in metric tons (numeric literal)."
+            ]
+        },
+        "hasLoadingArea": {
+            "name": "hasLoadingArea",
+            "role": [
+                "Links a warehouse to a loading area."
+            ]
+        },
+        "hasEquipment": {
+            "name": "hasEquipment",
+            "role": [
+                "Links a location to an equipment individual present there."
+            ]
+        },
+        "equipmentMaxLoadTon": {
+            "name": "equipmentMaxLoadTon",
+            "role": [
+                "Max load capacity in tons for a handling equipment (numeric literal)."
+            ]
+        },
+        "storedInSector": {
+            "name": "storedInSector",
+            "role": [
+                "Links a product to the sector where it is stored."
+            ]
+        },
+        "usesPalletizationScheme": {
+            "name": "usesPalletizationScheme",
+            "role": [
+                "Links a product to its palletization scheme."
+            ]
+        },
+        "unitWeightKg": {
+            "name": "unitWeightKg",
+            "role": [
+                "Unit weight of a single product piece/block in kilograms (numeric literal)."
+            ]
+        },
+        "palletWeightKg": {
+            "name": "palletWeightKg",
+            "role": [
+                "Total weight per pallet in kilograms (numeric literal)."
+            ]
+        },
+        "averageStorageTimeDay": {
+            "name": "averageStorageTimeDay",
+            "role": [
+                "Average storage time in days (numeric literal)."
+            ]
+        },
+        "minAverageStorageTimeDay": {
+            "name": "minAverageStorageTimeDay",
+            "role": [
+                "Minimum average storage time in days when a range is given (numeric literal)."
+            ]
+        },
+        "maxAverageStorageTimeDay": {
+            "name": "maxAverageStorageTimeDay",
+            "role": [
+                "Maximum average storage time in days when a range is given (numeric literal)."
+            ]
+        },
+        "dailyStorageCostEuroPerPallet": {
+            "name": "dailyStorageCostEuroPerPallet",
+            "role": [
+                "Daily storage cost per pallet in euros (numeric literal)."
+            ]
+        },
+        "storageDensityTonPer50SqM": {
+            "name": "storageDensityTonPer50SqM",
+            "role": [
+                "Storage density measured as tons per 50 square meters (numeric literal)."
+            ]
+        },
+        "palletsPer100SqM": {
+            "name": "palletsPer100SqM",
+            "role": [
+                "Pallet capacity per 100 square meters (numeric literal)."
+            ]
+        },
+        "approxTotalMassTonPer100SqM": {
+            "name": "approxTotalMassTonPer100SqM",
+            "role": [
+                "Approximate total stored mass in tons per 100 square meters (numeric literal)."
+            ]
+        },
+        "storedInAisleType": {
+            "name": "storedInAisleType",
+            "role": [
+                "Links a product to the type of aisle used to store it."
+            ]
+        },
+        "spaceOptimizationPercent": {
+            "name": "spaceOptimizationPercent",
+            "role": [
+                "Space optimization percentage relative to a baseline (numeric literal)."
+            ]
+        },
+        "comparedToProduct": {
+            "name": "comparedToProduct",
+            "role": [
+                "Links a performance metric to the baseline product being compared to."
+            ]
+        },
+        "usesPackagingMaterial": {
+            "name": "usesPackagingMaterial",
+            "role": [
+                "Links a product or palletization to the packaging material used."
+            ]
+        },
+        "usesIdentificationMethod": {
+            "name": "usesIdentificationMethod",
+            "role": [
+                "Links a product or system to an identification method used (e.g., QR code)."
+            ]
+        },
+        "hasInventoryManagementSystem": {
+            "name": "hasInventoryManagementSystem",
+            "role": [
+                "Links a warehouse to its inventory management system."
+            ]
+        },
+        "usesTrackingSystem": {
+            "name": "usesTrackingSystem",
+            "role": [
+                "Links an inventory management system to a tracking system (e.g., RFID)."
+            ]
+        },
+        "monitorsFlowType": {
+            "name": "monitorsFlowType",
+            "role": [
+                "Links a tracking system to the flow types it monitors."
+            ]
+        },
+        "hasShelving": {
+            "name": "hasShelving",
+            "role": [
+                "Links a sector/warehouse to a shelving or rack system."
+            ]
+        },
+        "shelvingLevels": {
+            "name": "shelvingLevels",
+            "role": [
+                "Number of levels on a shelving or rack (numeric literal)."
+            ]
+        },
+        "hasZoningCriteria": {
+            "name": "hasZoningCriteria",
+            "role": [
+                "Links a sector to a marking scheme used for zoning."
+            ]
+        },
+        "stackedLevelsMax": {
+            "name": "stackedLevelsMax",
+            "role": [
+                "Maximum safe stacking levels for pallets (numeric literal)."
+            ]
+        },
+        "hasSector": {
+            "name": "hasSector",
+            "role": [
+                "Links a warehouse to its sectors."
+            ]
+        },
+        "hasPickingArea": {
+            "name": "hasPickingArea",
+            "role": [
+                "Links a sector to its picking area."
+            ]
+        },
+        "usesAutomationSystem": {
+            "name": "usesAutomationSystem",
+            "role": [
+                "Links a picking area to an automation system."
+            ]
+        },
+        "hasTruckLoadingOperation": {
+            "name": "hasTruckLoadingOperation",
+            "role": [
+                "Links a warehouse to a truck loading operation."
+            ]
+        },
+        "truckAveragePalletsPerTrip": {
+            "name": "truckAveragePalletsPerTrip",
+            "role": [
+                "Average number of pallets per truck trip (numeric literal)."
+            ]
+        },
+        "averagePreparationTimeMin": {
+            "name": "averagePreparationTimeMin",
+            "role": [
+                "Average preparation time in minutes (numeric literal)."
+            ]
+        },
+        "includesProduct": {
+            "name": "includesProduct",
+            "role": [
+                "Links an order to the products it includes."
+            ]
+        },
+        "supportsPalletizationScheme": {
+            "name": "supportsPalletizationScheme",
+            "role": [
+                "Links a loading area to the palletization schemes it can handle."
+            ]
+        },
+        "hasMaterialType": {
+            "name": "hasMaterialType",
+            "role": [
+                "Links a warehouse or sector to the type of material stored."
+            ]
+        },
+        "storageCostIncludes": {
+            "name": "storageCostIncludes",
+            "role": [
+                "Links a product's storage cost to included components (e.g., handling, surveillance, insurance)."
+            ]
+        },
+        "handledWithEquipment": {
+            "name": "handledWithEquipment",
+            "role": [
+                "Links a product to handling equipment used for it."
+            ]
+        },
+        "hasEquipmentFeature": {
+            "name": "hasEquipmentFeature",
+            "role": [
+                "Links an equipment individual to a feature individual."
+            ]
+        },
+        "minAveragePalletWeightKg": {
+            "name": "minAveragePalletWeightKg",
+            "role": [
+                "Minimum of the average pallet weight range in kilograms (numeric literal)."
+            ]
+        },
+        "maxAveragePalletWeightKg": {
+            "name": "maxAveragePalletWeightKg",
+            "role": [
+                "Maximum of the average pallet weight range in kilograms (numeric literal)."
+            ]
+        },
+        "describedAlsoBy": {
+            "name": "describedAlsoBy",
+            "role": [
+                "Link two different individuals that describe the same product."
+            ]
+        }
+    },
+    "abox_ind": {
+        "Yellow": {
+            "name": "Yellow",
+            "classes": [
+                "Color"
+            ],
+            "properties": [
+                [
+                    "name",
+                    "Yellow"
+                ]
+            ],
+            "role": [
+                "Color value"
+            ]
+        },
+        "Gray": {
+            "name": "Gray",
+            "classes": [
+                "Color"
+            ],
+            "properties": [
+                [
+                    "name",
+                    "Gray"
+                ]
+            ],
+            "role": [
+                "Color value"
+            ]
+        },
+        "Sandstone": {
+            "name": "Sandstone",
+            "classes": [
+                "Color"
+            ],
+            "properties": [
+                [
+                    "name",
+                    "Sandstone"
+                ]
+            ],
+            "role": [
+                "Color value"
+            ]
+        },
+        "Hazelnut": {
+            "name": "Hazelnut",
+            "classes": [
+                "Color"
+            ],
+            "properties": [
+                [
+                    "name",
+                    "Hazelnut"
+                ]
+            ],
+            "role": [
+                "Color value"
+            ]
+        },
+        "ManualInstallation": {
+            "name": "ManualInstallation",
+            "classes": [
+                "InstallationMethod"
+            ],
+            "properties": [
+                [
+                    "name",
+                    "Manual installation"
+                ]
+            ],
+            "role": [
+                "Installation method"
+            ]
+        },
+        "MachineInstallation": {
+            "name": "MachineInstallation",
+            "classes": [
+                "InstallationMethod"
+            ],
+            "properties": [
+                [
+                    "name",
+                    "Machine installation"
+                ]
+            ],
+            "role": [
+                "Installation method"
+            ]
+        },
+        "SideLine_CURB_SP8": {
+            "name": "SideLine_CURB_SP8",
+            "classes": [
+                "ProductVariant"
+            ],
+            "properties": [
+                [
+                    "modularDimensionsCm",
+                    "100 x 8 x 25"
+                ],
+                [
+                    "piecesPerPack",
+                    "36"
+                ],
+                [
+                    "variantLabel",
+                    "CURB SP8"
+                ],
+                [
+                    "weightKg",
+                    "39"
+                ]
+            ],
+            "role": [
+                "Variant of SideLine"
+            ]
+        },
+        "SideLine_CURB_SP10": {
+            "name": "SideLine_CURB_SP10",
+            "classes": [
+                "ProductVariant"
+            ],
+            "properties": [
+                [
+                    "variantLabel",
+                    "CURB SP10"
+                ],
+                [
+                    "modularDimensionsCm",
+                    "100 x 10 x 25"
+                ],
+                [
+                    "weightKg",
+                    "50"
+                ],
+                [
+                    "piecesPerPack",
+                    "27"
+                ]
+            ],
+            "role": [
+                "Variant of SideLine"
+            ]
+        },
+        "SideLine_CURB_SP12": {
+            "name": "SideLine_CURB_SP12",
+            "classes": [
+                "ProductVariant"
+            ],
+            "properties": [
+                [
+                    "modularDimensionsCm",
+                    "100 x 12 x 25"
+                ],
+                [
+                    "variantLabel",
+                    "CURB SP12"
+                ],
+                [
+                    "piecesPerPack",
+                    "24"
+                ],
+                [
+                    "weightKg",
+                    "60"
+                ]
+            ],
+            "role": [
+                "Variant of SideLine"
+            ]
+        },
+        "SideLine_CURB_SP15": {
+            "name": "SideLine_CURB_SP15",
+            "classes": [
+                "ProductVariant"
+            ],
+            "properties": [
+                [
+                    "piecesPerPack",
+                    "18"
+                ],
+                [
+                    "modularDimensionsCm",
+                    "100 x 15 x 25"
+                ],
+                [
+                    "weightKg",
+                    "76"
+                ],
+                [
+                    "variantLabel",
+                    "CURB SP15"
+                ]
+            ],
+            "role": [
+                "Variant of SideLine"
+            ]
+        },
+        "EcoRing_2298": {
+            "name": "EcoRing_2298",
+            "classes": [
+                "EcoRingCategory"
+            ],
+            "properties": [
+                [
+                    "id",
+                    "2298"
+                ],
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=2"
+                ],
+                [
+                    "modularDimensionsCm",
+                    "46x55x12 - 20"
+                ],
+                [
+                    "blockWeightKg",
+                    "58"
+                ],
+                [
+                    "shortDescription",
+                    "The EcoRing system combines an intelligent circular shape with sustainable production and integrates with the environment by offering natural soil aeration."
+                ],
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=1"
+                ],
+                [
+                    "hasInstallationMethod",
+                    "MachineInstallation"
+                ],
+                [
+                    "piecesPerPallet",
+                    "20"
+                ],
+                [
+                    "webPageURL",
+                    "https://example-company.com/prodotto/ecoring"
+                ],
+                [
+                    "piecesPerSquareMeterInAdherence",
+                    "14"
+                ],
+                [
+                    "name",
+                    "EcoRing"
+                ],
+                [
+                    "hasColor",
+                    "Gray"
+                ],
+                [
+                    "piecesPerSquareMeterAtMaxSpacing",
+                    "8.2"
+                ],
+                [
+                    "description",
+                    "Available colors: Yellow, Gray. Placement at maximum spacing. Features: Manual installation, Machine installation."
+                ],
+                [
+                    "categoriesPath",
+                    "Retaining Walls > EcoRing"
+                ],
+                [
+                    "maxSpacingCm",
+                    "32"
+                ],
+                [
+                    "hasColor",
+                    "Yellow"
+                ],
+                [
+                    "hasInstallationMethod",
+                    "ManualInstallation"
+                ],
+                [
+                    "technicalSheetURL",
+                    "https://docs.example-company.com/dummy.pdf"
+                ]
+            ],
+            "role": [
+                "Concrete retaining wall product"
+            ]
+        },
+        "MiniEcoRing_2334": {
+            "name": "MiniEcoRing_2334",
+            "classes": [
+                "MiniEcoRingCategory"
+            ],
+            "properties": [
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=10"
+                ],
+                [
+                    "piecesPerSquareMeterAtMaxSpacing",
+                    "11.5"
+                ],
+                [
+                    "piecesPerPallet",
+                    "60"
+                ],
+                [
+                    "blockWeightKg",
+                    "21"
+                ],
+                [
+                    "hasInstallationMethod",
+                    "MachineInstallation"
+                ],
+                [
+                    "shortDescription",
+                    "MiniEcoRing is the compact version suitable for light slopes, offering versatility and easy installation while maintaining the advantages of the main system."
+                ],
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=9"
+                ],
+                [
+                    "maxSpacingCm",
+                    "25"
+                ],
+                [
+                    "categoriesPath",
+                    "Retaining Walls > MiniEcoRing"
+                ],
+                [
+                    "hasColor",
+                    "Gray"
+                ],
+                [
+                    "webPageURL",
+                    "https://example-company.com/prodotto/miniecoring"
+                ],
+                [
+                    "modularDimensionsCm",
+                    "35 x 30 x 15-16.5"
+                ],
+                [
+                    "name",
+                    "MiniEcoRing"
+                ],
+                [
+                    "hasColor",
+                    "Yellow"
+                ],
+                [
+                    "description",
+                    "Available colors: Yellow, Gray. Standard installation pattern. Features: Manual installation, Machine installation."
+                ],
+                [
+                    "hasInstallationMethod",
+                    "ManualInstallation"
+                ],
+                [
+                    "technicalSheetURL",
+                    "https://docs.example-company.com/dummy.pdf"
+                ],
+                [
+                    "id",
+                    "2334"
+                ],
+                [
+                    "piecesPerSquareMeterAt16cmSpacing",
+                    "13"
+                ],
+                [
+                    "piecesPerSquareMeterInAdherence",
+                    "19"
+                ]
+            ],
+            "role": [
+                "Concrete retaining wall product"
+            ]
+        },
+        "SideLine_2618": {
+            "name": "SideLine_2618",
+            "classes": [
+                "CurbingCopingsDrainChannels"
+            ],
+            "properties": [
+                [
+                    "hasColor",
+                    "Sandstone"
+                ],
+                [
+                    "description",
+                    "Available colors: Sandstone, Hazelnut."
+                ],
+                [
+                    "name",
+                    "SideLine"
+                ],
+                [
+                    "hasColor",
+                    "Hazelnut"
+                ],
+                [
+                    "id",
+                    "2618"
+                ],
+                [
+                    "categoriesPath",
+                    "Curbing, Copings & Drain Channels"
+                ],
+                [
+                    "technicalSheetURL",
+                    "https://docs.example-company.com/dummy.pdf"
+                ],
+                [
+                    "hasVariant",
+                    "SideLine_CURB_SP10"
+                ],
+                [
+                    "hasVariant",
+                    "SideLine_CURB_SP12"
+                ],
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=17"
+                ],
+                [
+                    "hasVariant",
+                    "SideLine_CURB_SP8"
+                ],
+                [
+                    "webPageURL",
+                    "https://example-company.com/prodotto/sideline"
+                ],
+                [
+                    "hasVariant",
+                    "SideLine_CURB_SP15"
+                ],
+                [
+                    "shortDescription",
+                    "Product available in various thicknesses; SP8 model also offered in Sandstone and Hazelnut colors."
+                ]
+            ],
+            "role": [
+                "Curbing product"
+            ]
+        },
+        "GrecCurb100_2626": {
+            "name": "GrecCurb100_2626",
+            "classes": [
+                "CurbingCopingsDrainChannels"
+            ],
+            "properties": [
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=18"
+                ],
+                [
+                    "piecesPerLinearMeter",
+                    "1"
+                ],
+                [
+                    "modularDimensionsCm",
+                    "100 x 25 x 6 x 13"
+                ],
+                [
+                    "weightKg",
+                    "69"
+                ],
+                [
+                    "webPageURL",
+                    "https://example-company.com/prodotto/greccurb100"
+                ],
+                [
+                    "technicalSheetURL",
+                    "https://docs.example-company.com/dummy.pdf"
+                ],
+                [
+                    "piecesPerPallet",
+                    "24"
+                ],
+                [
+                    "name",
+                    "GrecCurb100"
+                ],
+                [
+                    "categoriesPath",
+                    "Curbing, Copings & Drain Channels"
+                ],
+                [
+                    "id",
+                    "2626"
+                ]
+            ],
+            "role": [
+                "Drain/curb component"
+            ]
+        },
+        "DrainConcaveDual_2633": {
+            "name": "DrainConcaveDual_2633",
+            "classes": [
+                "CurbingCopingsDrainChannels"
+            ],
+            "properties": [
+                [
+                    "weightKg",
+                    "40"
+                ],
+                [
+                    "piecesPerLinearMeter",
+                    "2"
+                ],
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=19"
+                ],
+                [
+                    "technicalSheetURL",
+                    "https://docs.example-company.com/dummy.pdf"
+                ],
+                [
+                    "webPageURL",
+                    "https://example-company.com/prodotto/drainconcavedual"
+                ],
+                [
+                    "id",
+                    "2633"
+                ],
+                [
+                    "modularDimensionsCm",
+                    "40 x 50 x H10 - x H8"
+                ],
+                [
+                    "categoriesPath",
+                    "Curbing, Copings & Drain Channels"
+                ],
+                [
+                    "name",
+                    "DrainConcaveDual"
+                ]
+            ],
+            "role": [
+                "Drain channel component"
+            ]
+        },
+        "WavePave_1074": {
+            "name": "WavePave_1074",
+            "classes": [
+                "WavePaveCategory"
+            ],
+            "properties": [
+                [
+                    "id",
+                    "1074"
+                ],
+                [
+                    "thicknessMm",
+                    "80"
+                ],
+                [
+                    "categoriesPath",
+                    "Outdoor Paving > WavePave"
+                ],
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=21"
+                ],
+                [
+                    "name",
+                    "WavePave"
+                ],
+                [
+                    "technicalSheetURL",
+                    "https://docs.example-company.com/dummy.pdf"
+                ],
+                [
+                    "webPageURL",
+                    "https://example-company.com/prodotto/wavepave"
+                ],
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=20"
+                ],
+                [
+                    "shortDescription",
+                    "WavePave is an outdoor paving system designed for durability and aesthetics, suitable for open environments."
+                ]
+            ],
+            "role": [
+                "Outdoor paving product"
+            ]
+        },
+        "Rustika_2091": {
+            "name": "Rustika_2091",
+            "classes": [
+                "TraditionalStyle"
+            ],
+            "properties": [
+                [
+                    "categoriesPath",
+                    "Outdoor Paving > Traditional Style"
+                ],
+                [
+                    "shortDescription",
+                    "Rustika is a traditional aged-style paving, ideal for outdoor areas with a natural look."
+                ],
+                [
+                    "technicalSheetURL",
+                    "https://docs.example-company.com/dummy.pdf"
+                ],
+                [
+                    "webPageURL",
+                    "https://example-company.com/prodotto/rustika"
+                ],
+                [
+                    "id",
+                    "2091"
+                ],
+                [
+                    "name",
+                    "Rustika"
+                ],
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=22"
+                ]
+            ],
+            "role": [
+                "Traditional style outdoor paving product"
+            ]
+        },
+        "SculptStone_2179": {
+            "name": "SculptStone_2179",
+            "classes": [
+                "TraditionalStyle"
+            ],
+            "properties": [
+                [
+                    "name",
+                    "SculptStone"
+                ],
+                [
+                    "categoriesPath",
+                    "Outdoor Paving > Traditional Style"
+                ],
+                [
+                    "shortDescription",
+                    "SculptStone combines a carved effect with strength, designed for elegant and durable outdoor environments."
+                ],
+                [
+                    "imageURL",
+                    "https://picsum.photos/400/300?random=23"
+                ],
+                [
+                    "webPageURL",
+                    "https://example-company.com/prodotto/sculptstone"
+                ],
+                [
+                    "technicalSheetURL",
+                    "https://docs.example-company.com/dummy.pdf"
+                ],
+                [
+                    "id",
+                    "2179"
+                ]
+            ],
+            "role": [
+                "Traditional style outdoor paving product"
+            ]
+        },
+        "MainWarehouse": {
+            "name": "MainWarehouse",
+            "classes": [
+                "Warehouse"
+            ],
+            "properties": [
+                [
+                    "hasInventoryManagementSystem",
+                    "InventorySystem_1"
+                ],
+                [
+                    "hasEquipment",
+                    "OverheadCrane_1_10t"
+                ],
+                [
+                    "hasLoadingArea",
+                    "LoadingArea_Main"
+                ],
+                [
+                    "hasEquipment",
+                    "OverheadCrane_2_10t"
+                ],
+                [
+                    "hasMaterialType",
+                    "VibroCompressedConcrete"
+                ],
+                [
+                    "hasTruckLoadingOperation",
+                    "TruckLoading_Op1"
+                ],
+                [
+                    "hasSector",
+                    "SectorA_RetainingWalls"
+                ],
+                [
+                    "hasSector",
+                    "SectorB_CurbsCopingsDrain"
+                ],
+                [
+                    "hasAreaSqM",
+                    "2500"
+                ],
+                [
+                    "hasStorageCapacityTon",
+                    "3200"
+                ],
+                [
+                    "hasSector",
+                    "SectorC_Paving"
+                ]
+            ],
+            "role": [
+                "Main warehouse with equipment, IMS, and sectors.",
+                "Main warehouse dedicated to retaining walls (indoors)."
+            ]
+        },
+        "VibroCompressedConcrete": {
+            "name": "VibroCompressedConcrete",
+            "classes": [
+                "MaterialType"
+            ],
+            "properties": [],
+            "role": [
+                "Material type stored as vibro-compressed concrete."
+            ]
+        },
+        "LoadingArea_Main": {
+            "name": "LoadingArea_Main",
+            "classes": [
+                "LoadingArea"
+            ],
+            "properties": [
+                [
+                    "supportsPalletizationScheme",
+                    "Palletization_EcoRing_20pp"
+                ],
+                [
+                    "hasEquipment",
+                    "OverheadCrane_1_10t"
+                ],
+                [
+                    "hasEquipment",
+                    "OverheadCrane_2_10t"
+                ],
+                [
+                    "supportsPalletizationScheme",
+                    "Palletization_MiniEcoRing_60pp"
+                ]
+            ],
+            "role": [
+                "Loading area supports EcoRing and MiniEcoRing pallet handling.",
+                "Primary loading area for MainWarehouse."
+            ]
+        },
+        "OverheadCrane_1_10t": {
+            "name": "OverheadCrane_1_10t",
+            "classes": [
+                "OverheadCrane"
+            ],
+            "properties": [
+                [
+                    "equipmentMaxLoadTon",
+                    "10"
+                ]
+            ],
+            "role": [
+                "Overhead crane with 10-ton capacity."
+            ]
+        },
+        "OverheadCrane_2_10t": {
+            "name": "OverheadCrane_2_10t",
+            "classes": [
+                "OverheadCrane"
+            ],
+            "properties": [
+                [
+                    "equipmentMaxLoadTon",
+                    "10"
+                ]
+            ],
+            "role": [
+                "Overhead crane with 10-ton capacity."
+            ]
+        },
+        "SectorA_RetainingWalls": {
+            "name": "SectorA_RetainingWalls",
+            "classes": [
+                "Sector"
+            ],
+            "properties": [
+                [
+                    "hasAreaSqM",
+                    "2500"
+                ],
+                [
+                    "hasPickingArea",
+                    "PickingArea_A"
+                ]
+            ],
+            "role": [
+                "Sector A dedicated to retaining walls.",
+                "Sector A with picking area."
+            ]
+        },
+        "SectorB_CurbsCopingsDrain": {
+            "name": "SectorB_CurbsCopingsDrain",
+            "classes": [
+                "Sector"
+            ],
+            "properties": [
+                [
+                    "hasShelving",
+                    "Shelving_Metal_3Level"
+                ],
+                [
+                    "hasZoningCriteria",
+                    "MarkingScheme_Thickness_Color"
+                ],
+                [
+                    "hasPickingArea",
+                    "PickingArea_B"
+                ],
+                [
+                    "hasAreaSqM",
+                    "1200"
+                ]
+            ],
+            "role": [
+                "Sector B with 3-level metal shelving and zones by thickness and color.",
+                "Sector B with picking area.",
+                "Sector B dedicated to curbs, copings & drain channels."
+            ]
+        },
+        "SectorC_Paving": {
+            "name": "SectorC_Paving",
+            "classes": [
+                "Sector"
+            ],
+            "properties": [
+                [
+                    "hasAreaSqM",
+                    "3000"
+                ],
+                [
+                    "hasPickingArea",
+                    "PickingArea_C"
+                ],
+                [
+                    "hasShelving",
+                    "Rack_SingleLevel_1"
+                ]
+            ],
+            "role": [
+                "Sector C with single-level racks for paving.",
+                "Sector C with picking area.",
+                "Sector C dedicated to outdoor paving products."
+            ]
+        },
+        "InventorySystem_1": {
+            "name": "InventorySystem_1",
+            "classes": [
+                "InventoryManagementSystem"
+            ],
+            "properties": [
+                [
+                    "usesTrackingSystem",
+                    "Tracking_RFID"
+                ]
+            ],
+            "role": [
+                "IMS uses RFID.",
+                "Inventory management system used in the warehouse."
+            ]
+        },
+        "Tracking_RFID": {
+            "name": "Tracking_RFID",
+            "classes": [
+                "TrackingSystem"
+            ],
+            "properties": [
+                [
+                    "monitorsFlowType",
+                    "Flow_IncomingBatch"
+                ],
+                [
+                    "monitorsFlowType",
+                    "Flow_OutgoingBatch"
+                ]
+            ],
+            "role": [
+                "RFID monitors incoming and outgoing batches.",
+                "RFID tracking technology."
+            ]
+        },
+        "Flow_IncomingBatch": {
+            "name": "Flow_IncomingBatch",
+            "classes": [
+                "FlowType"
+            ],
+            "properties": [],
+            "role": [
+                "Incoming batch flow type."
+            ]
+        },
+        "Flow_OutgoingBatch": {
+            "name": "Flow_OutgoingBatch",
+            "classes": [
+                "FlowType"
+            ],
+            "properties": [],
+            "role": [
+                "Outgoing batch flow type."
+            ]
+        },
+        "Palletization_EcoRing_20pp": {
+            "name": "Palletization_EcoRing_20pp",
+            "classes": [
+                "PalletizationScheme"
+            ],
+            "properties": [
+                [
+                    "palletWeightKg",
+                    "1160"
+                ],
+                [
+                    "piecesPerPallet",
+                    "20"
+                ]
+            ],
+            "role": [
+                "EcoRing palletization: 20 pieces per pallet."
+            ]
+        },
+        "Palletization_MiniEcoRing_60pp": {
+            "name": "Palletization_MiniEcoRing_60pp",
+            "classes": [
+                "PalletizationScheme"
+            ],
+            "properties": [
+                [
+                    "palletWeightKg",
+                    "1260"
+                ],
+                [
+                    "piecesPerPallet",
+                    "60"
+                ]
+            ],
+            "role": [
+                "MiniEcoRing palletization: 60 pieces per pallet."
+            ]
+        },
+        "Palletization_SideLineSP15_24pp": {
+            "name": "Palletization_SideLineSP15_24pp",
+            "classes": [
+                "PalletizationScheme"
+            ],
+            "properties": [
+                [
+                    "palletWeightKg",
+                    "1656"
+                ],
+                [
+                    "piecesPerPallet",
+                    "24"
+                ]
+            ],
+            "role": [
+                "SideLine SP15 palletization: 24 pieces per pallet."
+            ]
+        },
+        "Palletization_PavingGeneric_1200kg": {
+            "name": "Palletization_PavingGeneric_1200kg",
+            "classes": [
+                "PalletizationScheme"
+            ],
+            "properties": [
+                [
+                    "palletWeightKg",
+                    "1200"
+                ]
+            ],
+            "role": [
+                "Generic palletization for paving products with average pallet weight 1200 kg."
+            ]
+        },
+        "Palletization_DrainConcaveDual": {
+            "name": "Palletization_DrainConcaveDual",
+            "classes": [
+                "PalletizationScheme"
+            ],
+            "properties": [
+                [
+                    "storageDensityTonPer50SqM",
+                    "10"
+                ],
+                [
+                    "stackedLevelsMax",
+                    "5"
+                ],
+                [
+                    "piecesPerLinearMeter",
+                    "2"
+                ]
+            ],
+            "role": [
+                "DrainConcaveDual palletization and stacking constraints."
+            ]
+        },
+        "Packaging_ShrinkFilm": {
+            "name": "Packaging_ShrinkFilm",
+            "classes": [
+                "PackagingMaterial"
+            ],
+            "properties": [],
+            "role": [
+                "Shrink film packaging."
+            ]
+        },
+        "ID_QRCode": {
+            "name": "ID_QRCode",
+            "classes": [
+                "IdentificationMethod"
+            ],
+            "properties": [],
+            "role": [
+                "QR code identification method."
+            ]
+        },
+        "Aisle_DoubleHeight_1": {
+            "name": "Aisle_DoubleHeight_1",
+            "classes": [
+                "DoubleHeightAisle"
+            ],
+            "properties": [],
+            "role": [
+                "Double-height aisle used for compact storage."
+            ]
+        },
+        "Shelving_Metal_3Level": {
+            "name": "Shelving_Metal_3Level",
+            "classes": [
+                "MetalShelving"
+            ],
+            "properties": [
+                [
+                    "shelvingLevels",
+                    "3"
+                ]
+            ],
+            "role": [
+                "3-level metal shelving."
+            ]
+        },
+        "Rack_SingleLevel_1": {
+            "name": "Rack_SingleLevel_1",
+            "classes": [
+                "SingleLevelRack"
+            ],
+            "properties": [
+                [
+                    "shelvingLevels",
+                    "1"
+                ]
+            ],
+            "role": [
+                "Single-level rack for paving pallets."
+            ]
+        },
+        "PickingArea_A": {
+            "name": "PickingArea_A",
+            "classes": [
+                "PickingArea"
+            ],
+            "properties": [
+                [
+                    "usesAutomationSystem",
+                    "AutoOrderPrepSystem"
+                ]
+            ],
+            "role": [
+                "Picking area for Sector A.",
+                "Automated picking area for Sector A."
+            ]
+        },
+        "PickingArea_B": {
+            "name": "PickingArea_B",
+            "classes": [
+                "PickingArea"
+            ],
+            "properties": [
+                [
+                    "usesAutomationSystem",
+                    "AutoOrderPrepSystem"
+                ]
+            ],
+            "role": [
+                "Picking area for Sector B.",
+                "Automated picking area for Sector B."
+            ]
+        },
+        "PickingArea_C": {
+            "name": "PickingArea_C",
+            "classes": [
+                "PickingArea"
+            ],
+            "properties": [
+                [
+                    "usesAutomationSystem",
+                    "AutoOrderPrepSystem"
+                ]
+            ],
+            "role": [
+                "Automated picking area for Sector C.",
+                "Picking area for Sector C."
+            ]
+        },
+        "AutoOrderPrepSystem": {
+            "name": "AutoOrderPrepSystem",
+            "classes": [
+                "AutomationSystem"
+            ],
+            "properties": [],
+            "role": [
+                "Automated order preparation system used in picking areas."
+            ]
+        },
+        "MarkingScheme_Thickness_Color": {
+            "name": "MarkingScheme_Thickness_Color",
+            "classes": [
+                "MarkingScheme"
+            ],
+            "properties": [],
+            "role": [
+                "Zones marked by thickness and color."
+            ]
+        },
+        "TruckLoading_Op1": {
+            "name": "TruckLoading_Op1",
+            "classes": [
+                "TruckLoadingOperation"
+            ],
+            "properties": [
+                [
+                    "truckAveragePalletsPerTrip",
+                    "22"
+                ]
+            ],
+            "role": [
+                "Truck loading operation with average pallets per trip."
+            ]
+        },
+        "EquipmentFeature_ReinforcedForks": {
+            "name": "EquipmentFeature_ReinforcedForks",
+            "classes": [
+                "EquipmentFeature"
+            ],
+            "properties": [],
+            "role": [
+                "Reinforced forks feature for forklifts."
+            ]
+        },
+        "Forklift_Electric_Reinforced": {
+            "name": "Forklift_Electric_Reinforced",
+            "classes": [
+                "ElectricForklift"
+            ],
+            "properties": [
+                [
+                    "hasEquipmentFeature",
+                    "EquipmentFeature_ReinforcedForks"
+                ]
+            ],
+            "role": [
+                "Electric forklift with reinforced forks."
+            ]
+        },
+        "CostComponent_Handling": {
+            "name": "CostComponent_Handling",
+            "classes": [
+                "CostComponent"
+            ],
+            "properties": [],
+            "role": [
+                "Handling cost component."
+            ]
+        },
+        "CostComponent_Surveillance": {
+            "name": "CostComponent_Surveillance",
+            "classes": [
+                "CostComponent"
+            ],
+            "properties": [],
+            "role": [
+                "Surveillance cost component."
+            ]
+        },
+        "CostComponent_InsuranceHandlingDamage": {
+            "name": "CostComponent_InsuranceHandlingDamage",
+            "classes": [
+                "CostComponent"
+            ],
+            "properties": [],
+            "role": [
+                "Insurance coverage for handling-related damage."
+            ]
+        },
+        "EcoRing": {
+            "name": "EcoRing",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "unitWeightKg",
+                    "58"
+                ],
+                [
+                    "approxTotalMassTonPer100SqM",
+                    "100"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "0.80"
+                ],
+                [
+                    "storageCostIncludes",
+                    "CostComponent_Handling"
+                ],
+                [
+                    "usesPalletizationScheme",
+                    "Palletization_EcoRing_20pp"
+                ],
+                [
+                    "palletsPer100SqM",
+                    "90"
+                ],
+                [
+                    "storedInSector",
+                    "SectorA_RetainingWalls"
+                ],
+                [
+                    "averageStorageTimeDay",
+                    "14"
+                ],
+                [
+                    "storageCostIncludes",
+                    "CostComponent_Surveillance"
+                ]
+            ],
+            "role": [
+                "Retaining wall product.",
+                "EcoRing storage cost includes handling and surveillance."
+            ]
+        },
+        "MiniEcoRing": {
+            "name": "MiniEcoRing",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "spaceOptimizationPercent",
+                    "25"
+                ],
+                [
+                    "unitWeightKg",
+                    "21"
+                ],
+                [
+                    "usesPalletizationScheme",
+                    "Palletization_MiniEcoRing_60pp"
+                ],
+                [
+                    "usesIdentificationMethod",
+                    "ID_QRCode"
+                ],
+                [
+                    "comparedToProduct",
+                    "EcoRing"
+                ],
+                [
+                    "storedInAisleType",
+                    "Aisle_DoubleHeight_1"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "0.55"
+                ],
+                [
+                    "usesPackagingMaterial",
+                    "Packaging_ShrinkFilm"
+                ],
+                [
+                    "averageStorageTimeDay",
+                    "10"
+                ],
+                [
+                    "storedInSector",
+                    "SectorA_RetainingWalls"
+                ]
+            ],
+            "role": [
+                "Smaller retaining wall product."
+            ]
+        },
+        "SideLineSP8": {
+            "name": "SideLineSP8",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "maxAveragePalletWeightKg",
+                    "1400"
+                ],
+                [
+                    "palletWeightKg",
+                    "1400"
+                ],
+                [
+                    "minAverageStorageTimeDay",
+                    "20"
+                ],
+                [
+                    "palletWeightKg",
+                    "700"
+                ],
+                [
+                    "minAveragePalletWeightKg",
+                    "700"
+                ],
+                [
+                    "maxAverageStorageTimeDay",
+                    "25"
+                ],
+                [
+                    "storedInSector",
+                    "SectorB_CurbsCopingsDrain"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "1.10"
+                ]
+            ],
+            "role": [
+                "Curbing/Copings product SP8.",
+                "Approximate pallet weight range (700\u20131400 kg) for SideLine series.",
+                "SideLine SP8 pallet weight range for the line."
+            ]
+        },
+        "SideLineSP10": {
+            "name": "SideLineSP10",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "maxAveragePalletWeightKg",
+                    "1400"
+                ],
+                [
+                    "storedInSector",
+                    "SectorB_CurbsCopingsDrain"
+                ],
+                [
+                    "minAveragePalletWeightKg",
+                    "700"
+                ],
+                [
+                    "maxAverageStorageTimeDay",
+                    "25"
+                ],
+                [
+                    "minAverageStorageTimeDay",
+                    "20"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "1.10"
+                ]
+            ],
+            "role": [
+                "Curbing/Copings product SP10.",
+                "SideLine SP10 pallet weight range for the line."
+            ]
+        },
+        "SideLineSP12": {
+            "name": "SideLineSP12",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "maxAveragePalletWeightKg",
+                    "1400"
+                ],
+                [
+                    "storedInSector",
+                    "SectorB_CurbsCopingsDrain"
+                ],
+                [
+                    "minAveragePalletWeightKg",
+                    "700"
+                ],
+                [
+                    "maxAverageStorageTimeDay",
+                    "25"
+                ],
+                [
+                    "minAverageStorageTimeDay",
+                    "20"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "1.10"
+                ]
+            ],
+            "role": [
+                "Curbing/Copings product SP12.",
+                "SideLine SP12 pallet weight range for the line."
+            ]
+        },
+        "SideLineSP15": {
+            "name": "SideLineSP15",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "storageCostIncludes",
+                    "CostComponent_InsuranceHandlingDamage"
+                ],
+                [
+                    "averageStorageTimeDay",
+                    "30"
+                ],
+                [
+                    "unitWeightKg",
+                    "69"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "1.25"
+                ],
+                [
+                    "storedInSector",
+                    "SectorB_CurbsCopingsDrain"
+                ],
+                [
+                    "usesPalletizationScheme",
+                    "Palletization_SideLineSP15_24pp"
+                ],
+                [
+                    "handledWithEquipment",
+                    "Forklift_Electric_Reinforced"
+                ],
+                [
+                    "maxAverageStorageTimeDay",
+                    "25"
+                ],
+                [
+                    "minAverageStorageTimeDay",
+                    "20"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "1.10"
+                ]
+            ],
+            "role": [
+                "Curbing/Copings product; metrics from context assume SP15 variant is 69 kg/element, 24 pcs/pallet.",
+                "Curbing/Copings product SP15."
+            ]
+        },
+        "DrainConcaveDual": {
+            "name": "DrainConcaveDual",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "averageStorageTimeDay",
+                    "7"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "0.45"
+                ],
+                [
+                    "unitWeightKg",
+                    "40"
+                ],
+                [
+                    "usesPalletizationScheme",
+                    "Palletization_DrainConcaveDual"
+                ],
+                [
+                    "storedInSector",
+                    "SectorB_CurbsCopingsDrain"
+                ]
+            ],
+            "role": [
+                "Drain channel element with fast turnover."
+            ]
+        },
+        "WavePave": {
+            "name": "WavePave",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "usesPalletizationScheme",
+                    "Palletization_PavingGeneric_1200kg"
+                ],
+                [
+                    "storedInSector",
+                    "SectorC_Paving"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "0.90"
+                ],
+                [
+                    "averageStorageTimeDay",
+                    "18"
+                ]
+            ],
+            "role": [
+                "Outdoor paving product."
+            ]
+        },
+        "Rustika": {
+            "name": "Rustika",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "usesPalletizationScheme",
+                    "Palletization_PavingGeneric_1200kg"
+                ],
+                [
+                    "storedInSector",
+                    "SectorC_Paving"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "0.90"
+                ],
+                [
+                    "averageStorageTimeDay",
+                    "18"
+                ]
+            ],
+            "role": [
+                "Outdoor paving product."
+            ]
+        },
+        "SculptStone": {
+            "name": "SculptStone",
+            "classes": [
+                "Product"
+            ],
+            "properties": [
+                [
+                    "usesPalletizationScheme",
+                    "Palletization_PavingGeneric_1200kg"
+                ],
+                [
+                    "storedInSector",
+                    "SectorC_Paving"
+                ],
+                [
+                    "dailyStorageCostEuroPerPallet",
+                    "0.90"
+                ],
+                [
+                    "averageStorageTimeDay",
+                    "18"
+                ]
+            ],
+            "role": [
+                "Outdoor paving product."
+            ]
+        },
+        "MixedOrder_Example1": {
+            "name": "MixedOrder_Example1",
+            "classes": [
+                "MixedOrder"
+            ],
+            "properties": [
+                [
+                    "averagePreparationTimeMin",
+                    "90"
+                ],
+                [
+                    "includesProduct",
+                    "EcoRing"
+                ],
+                [
+                    "includesProduct",
+                    "SideLineSP8"
+                ]
+            ],
+            "role": [
+                "Example mixed order (EcoRing + SideLine)."
+            ]
+        }
+    }
+}
